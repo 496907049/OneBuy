@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_layout_m_m_v"
+    android:background="@color/home_base_gray">
+
+    <include layout="@layout/base_top_bar"/>
+
+    <LinearLayout
+        style="@style/base_layout_m_m_v"
+        android:background="@drawable/fillet_white"
+       android:layout_margin="@dimen/base_margin_mid">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_checkbox_red_cheked"
+            android:layout_marginTop="@dimen/base_margin_large"/>
+
+        <TextView
+            style="@style/base_text_content.black"
+            android:text="@string/order_pay_complete"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/base_margin_mid"
+            android:layout_marginBottom="@dimen/base_margin_xlarge"/>
+
+
+        <LinearLayout
+            style="@style/base_layout_m_w_h"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base_margin_xxxlarge">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_chargehistory"/>
+            <TextView
+                style="@style/base_text_content.black_light"
+                android:text="@string/payway"
+                android:layout_marginLeft="@dimen/base_margin_xsmall"/>
+
+            <TextView
+                android:id="@+id/pay_way"
+                style="@style/base_text_content.red"
+                android:text="0"
+                android:layout_marginLeft="@dimen/base_margin_xxlarge"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/base_layout_m_w_h"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base_margin_xxxlarge"
+            android:layout_marginTop="@dimen/base_margin_small">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_pay_num"/>
+            <TextView
+                style="@style/base_text_content.black_light"
+                android:text="@string/pay_num"
+                android:layout_marginLeft="@dimen/base_margin_xsmall"/>
+
+            <TextView
+                android:id="@+id/pay_num"
+                style="@style/base_text_content.red"
+                android:text="0"
+                android:layout_marginLeft="@dimen/base_margin_xxlarge"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

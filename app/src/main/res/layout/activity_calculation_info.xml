@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/base_layout_m_m_v">
+
+    <include layout="@layout/base_top_bar" />
+
+    <android.support.v4.widget.NestedScrollView style="@style/base_layout_m_m_v">
+
+        <LinearLayout style="@style/base_layout_m_m_v">
+
+            <android.support.v7.widget.CardView
+                style="@style/base_layout_m_w"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="3dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout style="@style/ll_from_cal_info">
+
+                    <LinearLayout
+                        style="@style/base_layout_m_w_h"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            style="@style/base_layout_w_w"
+                            android:background="@drawable/fillet_yellow">
+
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:gravity="center"
+                                android:padding="@dimen/base_padding_small"
+                                android:text="@string/order_lucky_num"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/base_textsize_mid_ex" />
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/base_text_content.black"
+                            android:layout_margin="@dimen/base_margin_xsmall"
+                            android:text="@string/equal" />
+
+                        <LinearLayout
+                            style="@style/base_layout_w_m_v"
+                            android:background="@drawable/fillet_gray_dashed"
+                            android:gravity="center"
+                            android:padding="@dimen/base_padding_xxsmall">
+
+                            <TextView
+                                style="@style/base_text_content.grey"
+                                android:text="@string/value_a" />
+
+                            <View
+                                style="@style/my_line"
+                                android:layout_marginBottom="@dimen/base_margin_xsmall"
+                                android:layout_marginTop="@dimen/base_margin_xsmall" />
+
+                            <TextView
+                                style="@style/base_text_content.grey"
+                                android:text="@string/how_much_people" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/base_text_content.yellow"
+                            android:layout_margin="@dimen/base_margin_xsmall"
+                            android:text="@string/plus" />
+
+                        <TextView
+                            android:id="@+id/tv_win_init_number"
+                            style="@style/base_text_content.yellow"
+                            android:text="100000001"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/base_layout_m_w"
+                        android:gravity="center">
+
+                        <TextView
+                            style="@style/base_text_content.black"
+                            android:text="@string/qu_yu" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/base_layout_m_w"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="3dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout style="@style/ll_from_cal_info">
+
+                    <TextView
+                        style="@style/base_text_content.black"
+                        android:text="@string/value_a" />
+
+                    <LinearLayout style="@style/base_layout_m_w_h">
+
+                        <TextView
+                            style="@style/base_text_content.dark_grey"
+                            android:text="@string/equal" />
+
+                        <TextView
+                            style="@style/base_text_content.dark_grey"
+                            android:maxLines="1"
+                            android:text="@string/value_rule" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/base_layout_m_w_h"
+                        android:layout_marginTop="@dimen/base_margin_xsmall">
+
+                        <TextView
+                            style="@style/base_text_content.dark_grey"
+                            android:text="@string/equal" />
+
+                        <TextView
+                            android:id="@+id/tv_win_a_number"
+                            style="@style/base_text_content.yellow"
+                            android:text="193209039122" />
+
+                    </LinearLayout>
+                    <!--   展开     -->
+                    <LinearLayout
+                        style="@style/base_layout_m_w_h"
+                        android:layout_marginTop="@dimen/base_margin_xsmall">
+
+                        <TextView
+                            android:id="@+id/tv_open"
+                            style="@style/base_text_content.yellow"
+                            android:layout_width="match_parent"
+                            android:gravity="right"
+                            android:text="@string/spread" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_open"
+                        style="@style/base_layout_m_w"
+                        android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/base_layout_m_w"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardElevation="3dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout style="@style/ll_from_cal_info">
+
+                    <!--    计算结果   幸运号码    -->
+                    <LinearLayout style="@style/base_layout_m_w_h">
+
+                        <TextView
+                            style="@style/base_text_content.black"
+                            android:layout_weight="1"
+                            android:text="@string/cal_result" />
+
+                        <TextView
+                            style="@style/base_text_content.black_light"
+                            android:text="@string/order_lucky_num" />
+
+                        <TextView
+                            android:id="@+id/tv_win_num"
+                            style="@style/base_text_content.yellow"
+                            android:text="100000001" />
+
+                    </LinearLayout>
+
+                    <!--    取余数    -->
+                    <LinearLayout
+                        style="@style/base_layout_m_w_v"
+                        android:layout_marginTop="@dimen/base_margin_xsmall"
+                        android:background="@drawable/fillet_gray_dashed"
+                        android:padding="@dimen/base_padding_small">
+
+                        <LinearLayout
+                            style="@style/base_layout_m_w_h"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                style="@style/base_layout_w_w_v"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tv_win_a_number2"
+                                    style="@style/base_text_content.grey"
+                                    android:text="00" />
+
+                                <View
+                                    style="@style/my_line"
+                                    android:layout_marginBottom="@dimen/base_margin_xsmall"
+                                    android:layout_marginTop="@dimen/base_margin_xsmall" />
+
+                                <TextView
+                                    android:id="@+id/tv_win_order_num"
+                                    style="@style/base_text_content.grey"
+                                    android:text="00" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/base_text_content.dark_grey"
+                                android:layout_margin="@dimen/base_margin_xsmall"
+                                android:text="@string/plus" />
+
+                            <TextView
+                                android:id="@+id/tv_win_init_number2"
+                                style="@style/base_text_content.grey"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="00" />
+
+                            <TextView
+                                style="@style/base_text_content.dark_grey"
+                                android:layout_margin="@dimen/base_margin_xsmall"
+                                android:text="@string/equal" />
+
+                            <TextView
+                                android:id="@+id/tv_win_num2"
+                                style="@style/base_text_content.yellow"
+                                android:layout_weight="1"
+                                android:text="111111" />
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/base_layout_m_w_h">
+
+                            <TextView
+                                style="@style/base_text_content.black"
+                                android:text="(  " />
+
+                            <TextView
+                                style="@style/base_text_content.black"
+                                android:text="@string/qu_yu" />
+
+                            <TextView
+                                style="@style/base_text_content.black"
+                                android:text=": " />
+
+                            <TextView
+                                android:id="@+id/tv_remainder"
+                                style="@style/base_text_content.yellow"
+                                android:text=" 336 " />
+
+                            <TextView
+                                style="@style/base_text_content.black"
+                                android:text="  )" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--    计算方式及说明    -->
+                    <LinearLayout
+                        style="@style/base_layout_m_m_v"
+                        android:padding="@dimen/base_padding_xsmall">
+
+                        <TextView
+                            style="@style/base_text_content.black"
+                            android:text="@string/cal_mode_and_explain" />
+
+                        <TextView
+                            style="@style/base_text_content.grey"
+                            android:text="@string/explain1" />
+
+                        <TextView
+                            style="@style/base_text_content.grey"
+                            android:layout_marginBottom="@dimen/base_margin_xsmall"
+                            android:layout_marginTop="@dimen/base_margin_xsmall"
+                            android:text="@string/explain2" />
+
+                        <TextView
+                            style="@style/base_text_content.grey"
+                            android:text="@string/explain3" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

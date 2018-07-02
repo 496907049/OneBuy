@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.onebuy.view.VpSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+   style="@style/base_layout_m_m">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tl="http://schemas.android.com/apk/res-auto"
+        style="@style/base_layout_m_m_v"
+        android:background="@color/home_base_gray">
+
+        <include layout="@layout/goods_info_top_bar" />
+
+        <android.support.design.widget.CoordinatorLayout
+           style="@style/base_layout_m_m"
+            android:layout_marginLeft="@dimen/base_margin_small"
+            android:layout_marginRight="@dimen/base_margin_small"
+            android:layout_marginTop="@dimen/base_margin_xsmall"
+            android:layout_weight="1">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                style="@style/base_layout_m_w"
+                app:layout_behavior="com.app.onebuy.view.CustomBehavior">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/toolbar_layout"
+                    style="@style/base_layout_m_m"
+                    android:background="@color/home_base_gray"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        style="@style/base_layout_m_m_v"
+                        android:background="@drawable/fillet_white_half">
+
+                        <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:layout_marginLeft="@dimen/base_margin_xsmall"
+                            android:layout_marginRight="@dimen/base_margin_xsmall"
+                            android:layout_marginTop="@dimen/base_margin_small"
+                            app:indicator_height="8dp"
+                            app:indicator_width="8dp" />
+
+                        <!--    进行中时要展现的控件    -->
+                        <LinearLayout
+                            android:id="@+id/ll_doing"
+                            style="@style/base_layout_m_w_v"
+                            android:padding="@dimen/base_padding_small"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_commodity_name_doing"
+                                style="@style/commodity_text_yellow_size16sp"
+                                android:text="@string/commodity_name" />
+
+                            <LinearLayout
+                                style="@style/base_layout_m_w_h">
+
+                                <TextView
+                                    style="@style/commodity_text_gray_size14sp"
+                                    android:text="@string/value" />
+
+                                <TextView
+                                    android:id="@+id/tv_value"
+                                    style="@style/commodity_text_gray_size14sp"
+                                    android:text="@string/value" />
+
+                                <TextView
+                                    style="@style/commodity_text_gray_size14sp"
+                                    android:text="(" />
+
+                                <TextView
+                                    android:id="@+id/much_peso_much_people"
+                                    style="@style/commodity_text_gray_size14sp"
+                                    android:text="0" />
+
+                                <TextView
+                                    style="@style/commodity_text_gray_size14sp"
+                                    android:text="@string/one_peso_one_people" />
+
+                                <TextView
+                                    style="@style/commodity_text_gray_size14sp"
+                                    android:text=")" />
+
+
+                            </LinearLayout>
+
+                            <com.app.onebuy.view.roundprogressbar.RxRoundProgressBar
+                                android:id="@+id/progress"
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp"
+                                android:layout_marginTop="5dp"
+                                app:rcBackgroundColor="@color/progress_bg"
+                                app:rcBackgroundPadding="0dp"
+                                app:rcMax="100"
+                                app:rcProgress="20"
+                                app:rcProgressColor="@color/text_yellow_color"
+                                app:rcRadius="20dp">
+
+                            </com.app.onebuy.view.roundprogressbar.RxRoundProgressBar>
+
+                            <LinearLayout style="@style/base_layout_m_w_h">
+
+                                <TextView
+                                    android:id="@+id/tv_total_number"
+                                    style="@style/commodity_text_gray_size10sp"
+                                    android:text="@string/total_number"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:id="@+id/tv_remainder"
+                                    style="@style/commodity_text_gray_size10sp"
+                                    android:text="@string/remainder"
+                                    android:gravity="right"
+                                    android:layout_weight="1"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--     即将揭晓要展现的控件   -->
+                        <LinearLayout
+                            android:id="@+id/ll_publish"
+                            style="@style/ll_publish">
+
+                            <TextView
+                                android:id="@+id/tv_good_name_pub"
+                                style="@style/commodity_text_white_size16sp"
+                                android:singleLine="true"
+                                android:text="@string/commodity_name" />
+
+                            <LinearLayout
+                                style="@style/base_layout_m_w_h"
+                                android:layout_marginTop="@dimen/base_margin_xsmall">
+
+                                <LinearLayout
+                                    style="@style/base_layout_m_w_v"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/tv_no"
+                                        style="@style/commodity_text_white_size14sp"
+                                        android:text="@string/no" />
+
+                                    <TextView
+                                        android:id="@+id/tv_status"
+                                        style="@style/commodity_text_white_size14sp"
+                                        android:text="@string/status" />
+                                </LinearLayout>
+
+                                <Button
+                                    android:id="@+id/btn_pub_cal_info"
+                                    style="@style/cal_btn_xhdpi"
+                                    android:visibility="invisible"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <!--   已揭晓要展现的控件     -->
+                        <LinearLayout
+                            android:id="@+id/ll_end"
+                            style="@style/base_layout_m_w_v"
+                            android:layout_marginTop="@dimen/base_margin_xsmall"
+                            android:layout_marginBottom="@dimen/base_margin_xsmall"
+                            android:visibility="gone"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_good_name_end"
+                                style="@style/commodity_text_yellow_size16sp"
+                                android:text="@string/commodity_name"
+                                android:layout_marginLeft="@dimen/base_margin_mid"
+                                android:layout_marginRight="@dimen/base_margin_mid" />
+
+                            <LinearLayout style="@style/ll_end">
+                                <LinearLayout
+                                    style="@style/base_layout_m_w_h"
+                                    android:background="@drawable/fillet_white_half">
+
+                                    <ImageView
+                                       style="@style/base_layout_w_w"
+                                        android:src="@mipmap/winer_icon"
+                                        android:layout_marginTop="-3dp"
+                                        android:layout_marginLeft="-3dp"/>
+
+                                    <com.makeramen.roundedimageview.RoundedImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:id="@+id/user_icon_end"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:background="@color/red"
+                                        android:scaleType="fitXY"
+                                        app:riv_corner_radius="30dip"
+                                        app:riv_mutate_background="true"
+                                        android:layout_gravity="center"/>
+
+                                    <LinearLayout
+                                        style="@style/base_layout_m_w_v"
+                                        android:layout_margin="@dimen/base_margin_small">
+
+                                        <!--    获奖者    -->
+                                        <LinearLayout
+                                            style="@style/base_layout_m_w_h"
+                                            android:layout_weight="1">
+
+                                            <TextView
+                                                style="@style/commodity_text_gray_size14sp"
+                                                android:text="@string/order_lucky_start" />
+
+                                            <TextView
+                                                android:id="@+id/tv_lucky_star"
+                                                style="@style/commodity_text_red_size14sp"
+                                                android:text="@string/award_winner"
+                                                android:layout_marginLeft="@dimen/base_margin_xsmall"/>
+
+                                        </LinearLayout>
+
+                                        <!--    期号    -->
+                                        <LinearLayout
+                                            style="@style/base_layout_m_w_h"
+                                            android:layout_weight="1">
+
+                                            <TextView
+                                                style="@style/commodity_text_gray_size14sp"
+                                                android:text="@string/no" />
+
+                                            <TextView
+                                                android:id="@+id/tv_no_end"
+                                                style="@style/commodity_text_gray_size14sp"
+                                                android:text="0"
+                                                android:layout_marginLeft="@dimen/base_margin_xsmall"/>
+
+                                        </LinearLayout>
+
+                                        <!--    参与次数    -->
+                                        <LinearLayout
+                                            style="@style/base_layout_m_w_h"
+                                            android:layout_weight="1">
+
+                                            <TextView
+                                                style="@style/commodity_text_gray_size14sp"
+                                                android:text="@string/join_num" />
+
+                                            <TextView
+                                                android:id="@+id/tv_people_num"
+                                                style="@style/commodity_text_gray_size14sp"
+                                                android:text="10"
+                                                android:layout_marginLeft="@dimen/base_margin_xsmall"/>
+                                            <TextView
+                                                style="@style/commodity_text_gray_size14sp"
+                                                android:text="@string/people_num" />
+
+                                        </LinearLayout>
+
+                                        <!--    揭晓时间    -->
+                                        <LinearLayout
+                                            style="@style/base_layout_m_w_h"
+                                            android:layout_weight="1">
+
+                                            <TextView
+                                                style="@style/commodity_text_gray_size14sp"
+                                                android:text="@string/open_time" />
+                                            <TextView
+                                                android:id="@+id/tv_open_time"
+                                                style="@style/commodity_text_gray_size14sp"
+                                                android:layout_marginLeft="@dimen/base_margin_xsmall"/>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    style="@style/base_layout_m_w_h"
+                                    android:background="@drawable/fillet_yellow_half"
+                                    android:padding="@dimen/base_padding_xsmall"
+                                    android:layout_marginBottom="-1dp">
+
+                                    <TextView
+                                        style="@style/commodity_text_white_size14sp"
+                                        android:text="@string/order_lucky_num"
+                                        android:layout_width="wrap_content"/>
+
+                                    <TextView
+                                        android:id="@+id/tv_lucky_num"
+                                        style="@style/commodity_text_white_size14sp"
+                                        android:text="000"
+                                        android:layout_width="wrap_content"
+                                        android:layout_weight="1"/>
+
+
+                                    <Button
+                                        android:id="@+id/btn_end_cal_info"
+                                        style="@style/cal_btn_hdpi"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:layout_margin="@dimen/base_margin_small"
+                            android:background="@drawable/fillet_gray_fill" />
+                    </LinearLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/base_padding_small"
+                    android:paddingRight="@dimen/base_padding_small"
+                    tl:tl_indicator_color="@color/base_color_red"
+                    tl:tl_indicator_height="1.5dp"
+                    tl:tl_indicator_margin_bottom="0dp"
+                    tl:tl_textSelectColor="@color/base_color_red"
+                    tl:tl_textUnselectColor="@color/text_gray"
+                    tl:tl_textsize="@dimen/base_textsize_small"
+                    tl:tl_underline_color="@color/home_base_gray"
+                    tl:tl_underline_height="1dp" />
+
+            </android.support.design.widget.AppBarLayout>
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/nested_scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp"
+                        style="@style/base_layout_m_m"
+                     />
+                </android.support.v4.widget.NestedScrollView>
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <!--下方   倒计时和 我要参与按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/line_on_top"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/base_padding_small">
+
+            <TextView
+                android:id="@+id/tv_count_down_title"
+                style="@style/base_layout_w_m"
+                android:gravity="center"
+                android:text="@string/ending_time"
+                android:textColor="@color/base_text_grey"
+                android:textSize="@dimen/base_textsize_small" />
+
+            <cn.iwgang.countdownview.CountdownView
+                android:id="@+id/count_down_view"
+                style="@style/base_layout_w_m"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                app:isHideTimeBackground="false"
+                app:isShowDay="false"
+                app:isShowHour="true"
+                app:isShowMillisecond="false"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:isShowTimeBgDivisionLine="false"
+                app:suffixGravity="center"
+                app:suffixTextColor="#000000"
+                app:suffixTextSize="20sp"
+                app:timeBgColor="#F7B32D"
+                app:timeBgRadius="3dp"
+                app:timeTextColor="#FFFFFF"
+                app:timeTextSize="20sp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                style="@style/base_layout_m_m"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btn_join"
+                    style="@style/base_layout_w_m"
+                    android:background="@color/base_color_red"
+                    android:text="@string/join"
+                    android:textColor="@color/white"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/btn_go_to_next"
+                    style="@style/base_layout_w_m"
+                    android:background="@color/base_color_red"
+                    android:text="@string/go_to_next"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.app.onebuy.view.VpSwipeRefreshLayout>

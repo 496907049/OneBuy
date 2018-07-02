@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <include layout="@layout/base_top_bar" />
+
+        <LinearLayout style="@style/bg_white_round"
+            android:layout_marginTop="@dimen/base_margin_small"
+            >
+
+            <LinearLayout
+                style="@style/base_layout_m_w_h"
+                android:paddingLeft="@dimen/base_padding_mid"
+                android:paddingRight="@dimen/base_padding_mid">
+                <LinearLayout
+                    android:id="@+id/view_country"
+                    style="@style/base_layout_w_m_h"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/base_padding_small"
+                    >
+                    <TextView
+                        style="@style/base_text_content"
+                        android:text="+" />
+                    <TextView
+                        android:id="@+id/text_mobile_zone_num"
+                        style="@style/base_text_content.small"
+                        android:layout_marginRight="@dimen/base_margin_xsmall"
+                        android:text="86" />
+                    <ImageView
+                        style="@style/base_icon_small"
+                        android:src="@drawable/icon_arrow_down_black"
+                        />
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/edit_mobile"
+                    style="@style/base_item_edit_style"
+                    android:gravity="left"
+                    android:hint="@string/user_enter_new_mobile"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/text_msgcode"
+                    style="@style/login_btn_msgcode"
+                    android:text="@string/user_code_send"
+                    />
+
+            </LinearLayout>
+
+            <ImageView style="@style/divider_hor_style.color" />
+
+            <LinearLayout
+                style="@style/base_layout_m_w_h"
+                android:paddingLeft="@dimen/base_padding_mid">
+
+                <EditText
+                    android:id="@+id/edit_msgcode"
+                    style="@style/base_item_edit_style"
+                    android:gravity="left"
+                    android:hint="@string/user_code_hint"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/divider_hor_style.color" />
+
+            <LinearLayout
+                style="@style/base_layout_m_w_h"
+                android:paddingLeft="@dimen/base_padding_mid">
+
+                <EditText
+                    android:id="@+id/edit_pwd"
+                    style="@style/base_item_edit_style"
+                    android:gravity="left"
+                    android:hint="@string/user_password_hint"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:imeOptions="actionGo"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/base_btn_match.margin_big"
+        android:layout_marginTop="@dimen/base_margin_xlarge"
+        />
+
+    <LinearLayout
+       style="@style/base_layout_m_w_h_cv"
+        android:layout_marginLeft="@dimen/base_margin_xlarge"
+        android:layout_marginRight="@dimen/base_margin_xlarge"
+        android:layout_marginTop="@dimen/base_margin_mid"
+        >
+        <ImageView
+            style="@style/base_icon_large"
+            android:src="@drawable/icon_hint_grey"
+            />
+        <TextView
+            style="@style/base_text_content.small.grey"
+            android:text="@string/app_reminder"
+            />
+        <TextView
+            style="@style/base_text_content.small.grey"
+            android:text=":"
+            />
+    </LinearLayout>
+    <LinearLayout
+       style="@style/base_layout_m_w_h_cv"
+        android:layout_marginLeft="@dimen/base_margin_xlarge"
+        android:layout_marginTop="@dimen/base_margin_xsmall"
+        >
+        <TextView
+            style="@style/base_text_content.small.grey"
+            android:text="@string/modify_mobile_hint"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

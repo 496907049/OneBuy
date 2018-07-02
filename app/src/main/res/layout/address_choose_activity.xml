@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_white"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/base_top_bar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        >
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/base_icon_scrollbar_thumb"
+        />
+
+    <include layout="@layout/base_refresh_view" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/base_layout_m_w_h_cv"
+        android:gravity="center"
+        android:padding="@dimen/base_padding_small"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/btn_add"
+           style="@style/base_layout_w_w_h"
+            android:gravity="center"
+            android:background="@drawable/base_btn_red_gradient"
+            android:paddingLeft="@dimen/base_padding_mid_ex"
+            android:paddingRight="@dimen/base_padding_mid_ex"
+            android:paddingTop="@dimen/base_padding_small"
+            android:paddingBottom="@dimen/base_padding_small"
+            >
+            <ImageView
+                style="@style/base_icon_large"
+                android:src="@drawable/icon_add_white"
+                />
+
+            <TextView
+                style="@style/base_text_content"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/base_margin_small"
+                android:text="添加新收货人"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.onebuy.view.VpSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_layout"
+    style="@style/base_layout_m_m_v">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tl="http://schemas.android.com/apk/res-auto"
+        style="@style/base_layout_m_m_v">
+
+        <include layout="@layout/home_page_top_bar" />
+
+        <android.support.design.widget.CoordinatorLayout
+            style="@style/base_layout_m_m">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                style="@style/base_layout_m_w"
+                app:layout_behavior="com.app.onebuy.view.CustomBehavior">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/toolbar_layout"
+                    style="@style/base_layout_m_m"
+                    android:background="@color/home_base_gray"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        style="@style/base_layout_m_w_v"
+                        android:background="@color/home_base_gray">
+                        <!--  走马灯和轮播图  -->
+                        <RelativeLayout
+                            style="@style/base_layout_m_w"
+                            android:layout_margin="@dimen/base_margin_small">
+                            <com.youth.banner.Banner
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/banner"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                app:indicator_height="8dp"
+                                app:indicator_width="8dp" />
+
+                            <!--走马灯-->
+                            <LinearLayout
+                                style="@style/base_layout_m_w_h"
+                                android:layout_marginBottom="@dimen/base_margin_large"
+                                android:layout_marginLeft="@dimen/base_margin_small"
+                                android:layout_marginRight="@dimen/base_margin_small"
+                                android:background="@drawable/home_ad_bg">
+
+                                <ImageView
+                                    android:id="@+id/img_news"
+                                    android:layout_width="11dp"
+                                    android:layout_height="16dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/base_margin_large"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/home_icon_news" />
+
+                                <com.sunfusheng.marqueeview.MarqueeView
+                                    android:id="@+id/marqueeView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp"
+                                    android:paddingLeft="@dimen/dp_10"
+                                    android:paddingRight="@dimen/dp_10"
+                                    app:mvAnimDuration="1000"
+                                    app:mvDirection="bottom_to_top"
+                                    app:mvGravity="center"
+                                    app:mvInterval="3000"
+                                    app:mvSingleLine="true"
+                                    app:mvTextColor="@color/base_text_black"
+                                    app:mvTextSize="@dimen/marquee_view_text_size" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <!--商品分类   账户充值   帮助中心  3个按钮-->
+                        <LinearLayout
+                            style="@style/base_layout_m_w_h"
+                            android:layout_marginBottom="@dimen/base_margin_small"
+                            android:background="@color/white"
+                            android:padding="@dimen/base_padding_small">
+
+                            <LinearLayout
+                                android:id="@+id/ll_goods_type"
+                                style="@style/base_layout_m_w_v_c"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    style="@style/base_layout_w_w"
+                                    android:src="@mipmap/com_clas_icon" />
+
+                                <TextView
+                                    style="@style/base_layout_w_w"
+                                    android:layout_marginTop="@dimen/base_margin_small"
+                                    android:text="@string/commodity_classification" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_recharge"
+                                style="@style/base_layout_m_w_v_c"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    style="@style/base_layout_w_w"
+                                    android:src="@mipmap/recharge_icon" />
+
+                                <TextView
+                                    style="@style/base_layout_w_w"
+                                    android:layout_marginTop="@dimen/base_margin_small"
+                                    android:text="@string/recharge" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_help_circle"
+                                style="@style/base_layout_m_w_v_c"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    style="@style/base_layout_w_w"
+                                    android:src="@mipmap/help_circle_icon" />
+
+                                <TextView
+                                    style="@style/base_layout_w_w"
+                                    android:layout_marginTop="@dimen/base_margin_small"
+                                    android:text="@string/help_center" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--  人气推荐一栏  -->
+                        <RelativeLayout
+                            style="@style/base_layout_m_w"
+                            android:layout_marginTop="@dimen/base_margin_xsmall"
+                            android:layout_marginLeft="@dimen/base_margin_small"
+                            android:layout_marginRight="@dimen/base_margin_small"
+                            android:layout_marginBottom="-3dp"
+                            android:background="@color/transparent">
+
+                            <TextView
+                                android:id="@+id/tv_popularity"
+                                style="@style/base_text_content.red"
+                                android:layout_centerInParent="true"
+                                android:background="@mipmap/popularity_bg"
+                                android:gravity="center"
+                                android:text="@string/popularity"
+                                />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/tv_popularity"
+                                android:background="@color/line_red"></View>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/tv_popularity"
+                                android:background="@color/line_red"></View>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <!--  recyclerview -->
+            <LinearLayout
+                style="@style/base_layout_m_w_h"
+                android:layout_margin="@dimen/base_margin_xsmall"
+                android:layout_marginLeft="@dimen/base_margin_small"
+                android:layout_marginRight="@dimen/base_margin_small"
+                android:background="@drawable/fillet_white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    style="@style/base_layout_m_m_v" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+
+</com.app.onebuy.view.VpSwipeRefreshLayout>
+
+

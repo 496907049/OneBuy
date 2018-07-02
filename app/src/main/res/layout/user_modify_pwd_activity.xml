@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <include layout="@layout/base_top_bar" />
+
+    <LinearLayout style="@style/bg_white_round">
+
+        <LinearLayout
+            style="@style/base_layout_m_w_h"
+            android:paddingLeft="@dimen/base_padding_mid"
+            android:paddingRight="@dimen/base_padding_mid">
+
+            <TextView
+                style="@style/base_text_content.red"
+                android:text="*"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/user_item_title"
+                android:text="@string/user_old_password" />
+
+            <EditText
+                android:id="@+id/edit_old_pwd"
+                style="@style/base_item_edit_style"
+                android:gravity="left"
+                android:hint="@string/user_enter_old_password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/base_textsize_small"/>
+
+        </LinearLayout>
+
+        <ImageView style="@style/divider_hor_style" />
+
+        <LinearLayout
+            style="@style/base_layout_m_w_h"
+            android:paddingLeft="@dimen/base_padding_mid">
+
+            <TextView
+                style="@style/base_text_content.red"
+                android:text="*"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/user_item_title"
+                android:text="@string/user_new_password" />
+
+            <EditText
+                android:id="@+id/edit_new_pwd"
+                style="@style/base_item_edit_style"
+                android:gravity="left"
+                android:hint="@string/user_enter_new_password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/base_textsize_small"/>
+
+        </LinearLayout>
+
+        <ImageView style="@style/divider_hor_style.color" />
+
+        <LinearLayout
+            style="@style/base_layout_m_w_h"
+            android:paddingLeft="@dimen/base_padding_mid"
+            android:paddingRight="@dimen/base_padding_mid">
+
+            <TextView
+                style="@style/base_text_content.red"
+                android:text="*"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/user_item_title"
+                android:text="@string/user_confirm_password" />
+
+            <EditText
+                android:id="@+id/edit_pwd_confirm"
+                style="@style/base_item_edit_style"
+                android:gravity="left"
+                android:hint="@string/user_enter_password_cofirm"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="@dimen/base_textsize_small"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

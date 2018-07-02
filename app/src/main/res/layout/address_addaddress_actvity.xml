@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <include layout="@layout/base_top_bar" />
+
+        <LinearLayout style="@style/bg_white_round">
+
+            <LinearLayout
+                style="@style/base_item_nopadding_style">
+
+
+                <TextView
+                    style="@style/user_item_title"
+                    android:text="@string/address_name" />
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    style="@style/base_item_edit_style"
+                    android:gravity="left"
+                    android:hint="@string/address_enter_delivery_name" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/divider_hor_style.color" />
+
+            <LinearLayout
+                style="@style/base_item_nopadding_style">
+
+                <TextView
+                    style="@style/user_item_title"
+                    android:text="@string/user_mobile" />
+
+                <EditText
+                    android:id="@+id/edit_mobile"
+                    style="@style/base_item_edit_style"
+                    android:gravity="left"
+                    android:hint="@string/user_enter_mobile"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/divider_hor_style.color" />
+
+            <LinearLayout
+                style="@style/base_item_nopadding_style"
+                android:visibility="gone">
+                <TextView
+                    style="@style/user_item_title"
+                    android:text="@string/address_location" />
+
+                <TextView
+                    android:id="@+id/edit_pwd_confirm"
+                    style="@style/base_item_edit_style"
+                    android:hint="@string/address_enter_location"/>
+                <ImageView
+                    style="@style/base_item_img_tag" />
+
+            </LinearLayout>
+
+            <ImageView style="@style/divider_hor_style.color" />
+
+            <LinearLayout
+                style="@style/base_item_nopadding_style">
+                <TextView
+                    style="@style/user_item_title"
+                    android:text="@string/address_detail_address" />
+
+                <EditText
+                    android:id="@+id/edit_detail_address"
+                    style="@style/base_item_edit_style"
+                    android:hint="@string/address_enter_delivery_adress"
+                     />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/base_btn_match.margin_big"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="@dimen/base_margin_large"
+                android:text="@string/app_save"
+                />
+        </LinearLayout>
+
+</LinearLayout>

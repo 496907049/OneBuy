@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/list_item_bg_white_round"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/base_padding_mid">
+
+            <LinearLayout style="@style/base_layout_m_w_v_cv"
+                android:layout_marginLeft="@dimen/base_margin_mid">
+
+                <TextView
+                    android:id="@+id/text_name"
+                    style="@style/base_text_content"
+                    android:text="呆呆贞" />
+
+                <TextView
+                    android:id="@+id/text_mobile"
+                    style="@style/base_text_content"
+                    android:text="00" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_address"
+                style="@style/base_text_content"
+                android:layout_marginLeft="@dimen/base_margin_mid"
+                android:layout_marginTop="@dimen/base_margin_small"
+                android:text="福建省厦门市思明区软件园" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/divider_hor_style.color"
+            />
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv"
+            android:gravity="right"
+            >
+            <LinearLayout
+                android:id="@+id/view_edit"
+                style="@style/base_layout_w_w_h"
+                android:gravity="center_vertical"
+                android:padding="@dimen/base_padding_small"
+                android:background="@drawable/base_item_shadow_selector"
+                >
+                <ImageView
+                    style="@style/base_icon_large"
+                    android:src="@drawable/icon_edit"
+                    />
+                <TextView
+                    style="@style/base_text_content"
+                    android:text="@string/address_edit"
+                    android:layout_marginLeft="@dimen/base_margin_xsmall"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/view_delete"
+                style="@style/base_layout_w_w_h"
+                android:gravity="center_vertical"
+                android:padding="@dimen/base_padding_small"
+                android:layout_marginLeft="@dimen/base_margin_mid"
+                android:background="@drawable/base_item_shadow_selector"
+                >
+                <ImageView
+                    style="@style/base_icon_large"
+                    android:src="@drawable/address_icon_delete"
+                    />
+                <TextView
+                    style="@style/base_text_content"
+                    android:text="@string/address_delete"
+                    android:layout_marginLeft="@dimen/base_margin_xsmall"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

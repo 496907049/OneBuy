@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">1 m winner</string>
+    <string name="login_hint_mobile"> phone number </string>.
+    <string name="login_hint_pwd"> password </string>.
+    <string name="regist_pwd_hint"> set password </string>.
+    <string name="regist_pwd_againt_hint"> confirm password</string>.
+    <string name="login_msgcode_hint"> sms code </string>.
+    <string name="regist_alreadyread"> read and agree </string>.
+    <string name="regist_user_rules"> "trem and condition" </string>.
+
+    <string name="home_index"> homepage </string>
+    <string name="home_new"> latest reminder </string>
+    <string name="home_shows"> share </string>
+    <string name="home_user"> Account </string>
+
+    <string name="user_cyjl"> participation record </string>
+    <string name="user_zjjl"> winning record </string>
+    <string name="user_my_zjjl"> my winnings </string>
+    <string name="user_myshows"> my share </string>
+    <string name="user_myaccount"> my account </string>.
+    <string name="user_address"> delivery address </string>
+    <string name="user_userinfo"> personal information </string>
+    <string name="user_choose_payway"> change payment mode </string>.
+
+    <string name="user_account_left"> my balance </string>.
+    <string name="user_left_count_dollor"> pesos $</string>
+    <string name="user_charge"> Top Up </string>
+    <string name="user_charge_history">  loading history </string>.
+    <string name="user_spend_history"> consuming records </string>.
+    <string name="user_need_pay"> to pay </string>
+    <string name="user_charge_hint_one">1. The balance of your recharge account can only be used for platform sweepstakes; </string>
+    <string name="user_charge_hint_second">2. Account balance does not support withdrawal. </string>
+
+    <string name="setting_change_language"> Languages </string>
+    <string name="setting_chinese"> Chinese </string>
+    <string name="setting_english"> English </string>
+    <string name="setting_default"> Auto </string>
+
+    <string name="info_nickname"> nick-name </string>.
+    <string name="info_modify_pwd"> reset password </string>.
+    <string name="info_modify_mobile"> changer phone number </string>.
+    <string name="info_click_tomodify"> Profile Photo </string>.
+
+    <string name="join_number"> Participation code </string>
+
+    <string name="confirm_delivery"> confirm receipt </string>.
+    <string name="order_detail"> order details </string>
+    <string name="order_finish"> cuccess </string>
+    Does
+    <string name="order_share_hint"> Are you satisfied with the product? TO share it to your friends, ~</string>
+    <string name="order_delete_order"> delete order </string>.
+    <string name="order_apply_aftersales"> after-sales </string>.
+    <string name="order_comment_goods"> reviews </string>.
+    <string name="order_buy_again"> repurchase </string>
+    again.
+    <string name="order_choose_address"> choose a receiver </string>.
+    <string name="order_period_num"> NO: </string>
+    <string name="order_order_num"> total %1$s </string>
+    <string name="order_lucky_start"> lucky star: </string>
+    <string name="order_lucky_num"> lucky number </string>
+    <string name="order_peole_times">people</string>
+    <string name="order_delivery_info">receipt information</string>
+    <string name="order_goto_show">to share</string>
+    <string name="order_goods_totalprice">total</string>
+    <string name="order_pay_now">pay now</string>
+    <string name="order_go_charge">top up</string>
+    <string name="order_pay_byaccount">use my balance</string>
+    <string name="order_pay_bywechat">Wechat pay</string>
+    <string name="order_pay_byleftdes">(balance:%s)</string>
+    <string name="order_submit_title">place the order</string>
+    <string name="order_goods_left_changce">remaining %d people</string>
+    <string name="order_wait_receive">shipping</string>
+    <string name="order_wait_send">To send</string>
+    <string name="address_edit"> Edit </string>
+    <string name="address_delete"> delete </string>
+    <string name="address_delete_address_now">Confirm to delete the shipping address information?</string>
+    <string name="address_delete_now">delete now</string>
+    <string name="address_name"> name </string>.
+    <string name="address_enter_delivery_name"> enter the name of receiver </string>
+    <string name="address_enter_delivery_mobile">enter the phone number of receiver </string>
+    <string name="address_location"> region </string>
+    <string name="address_enter_location">Select provinces, cities, districts and counties</string>
+    <string name="address_detail_address"> address </string>.
+    <string name="address_enter_detail_address"> Street ,building number and other detailed address </string>
+
+    <string name="comment_please_enter_conent">input your story</string>
+    <string name="comment_delete_comment_now">Delete comment？</string>
+    <string name="comment_delete">delete</string>
+    <string name="show_upload_img">Images(up to 3)</string>
+    <string name="show_addshow">share</string>
+
+
+    <string name="user_enter_new_mobile">input new phone number</string>
+    <string name="user_enter_mobile">input current phone number</string>
+    <string name="modify_mobile_hint">After the phone number is changed, you need to log in with a new phone number.</string>
+
+    <string name="invite_invite_now">invite now</string>
+    <string name="invite_invite_has_present">present for invitation</string>
+    <string name="invite_my_invite_history">Accumulation</string>
+    <string name="invite_success_invite">successfully invited</string>
+    <string name="invite_invite_rewrard">Invitation Bonus</string>
+    <string name="unit_people">people</string>
+    <string name="unit_money">pesos</string>
+    <string name="unit_people_holder">%s people</string>
+    <string name="unit_money_holder">%s pesos</string>
+
+</resources>

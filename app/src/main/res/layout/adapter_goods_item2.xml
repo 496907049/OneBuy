@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/base_layout_m_w_v"
+    android:id="@+id/list_item">
+
+    <LinearLayout
+        style="@style/base_layout_m_w_h"
+        android:layout_margin="@dimen/base_margin_mid">
+
+        <ImageView
+            android:id="@+id/iv_product_icon"
+            style="@style/my_img" />
+
+        <LinearLayout
+           style="@style/base_layout_m_w_v"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_gravity="left|center">
+
+            <TextView
+                android:id="@+id/tv_prod_name"
+                style="@style/commodity_text_yellow_size14sp"
+                android:layout_marginTop="5dp"
+                android:text="商品"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_prod_progress"
+                style="@style/commodity_text_gray_size10sp"
+                android:text="商品进度" />
+
+            <com.app.onebuy.view.roundprogressbar.RxRoundProgressBar
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                app:rcBackgroundColor="@color/progress_bg"
+                app:rcBackgroundPadding="0dp"
+                app:rcMax="100"
+                app:rcProgress="20"
+                app:rcProgressColor="@color/text_yellow_color"
+                app:rcRadius="20dp">
+            </com.app.onebuy.view.roundprogressbar.RxRoundProgressBar>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

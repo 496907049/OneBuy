@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.3"
+    defaultConfig {
+        applicationId "com.app.onebuy"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 10
+        versionName "1.0"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+        //应用的包名、应用的签名、第三方平台注册的AppID及Appkey三者要一一对应，否则会无法分享
+        debug {
+            storeFile file("onebuy.jks")
+            storePassword "123456"
+            keyAlias "key0"
+            keyPassword "123456"
+        }
+    }
+
+    dexOptions{
+        jumboMode true
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+    }
+
+//    ndk {
+//        //选择要添加的对应 cpu 类型的.so 库。
+//        abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a'
+//        // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+//    }
+
+
+
+    sourceSets {
+        main {
+//            manifest.srcFile 'AndroidManifest.xml'
+//            java.srcDirs = ['src']
+//            resources.srcDirs = ['src']
+//            aidl.srcDirs = ['src']
+//            renderscript.srcDirs = ['src']
+//            res.srcDirs = ['res']
+            assets.srcDirs = ['src/main/assets']
+            jniLibs.srcDir(['libs'])
+        }
+
+//        debug.setRoot('build-types/debug')
+//        release.setRoot('build-types/release')
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.all { output ->
+////            def releaseTime = new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+//            def releaseTime = new Date().format("MM-dd", TimeZone.getTimeZone("UTC"))
+////            def file = output.outputFile
+//            def filename = "E购_V" + defaultConfig.versionName + "_" + defaultConfig.versionCode + "_" + releaseTime + ".apk"
+//            output.outputFileName = filename
+//        }
+//    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support:support-v4:26.1.0'
+
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.jcodecraeer:xrecyclerview:1.5.2'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.alibaba:fastjson:1.2.10'
+    compile 'com.mylhyl:acp:1.1.7'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    compile 'com.lzy.widget:imagepicker:0.6.1'  //图片选取
+
+    compile 'com.makeramen:roundedimageview:2.3.0'
+//    compile 'cn.yipianfengye.android:zxing-library:2.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.kaopiz:kprogresshud:1.1.0'
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+    //Log日志格式美化包
+//    compile 'com.orhanobut:logger:2.1.1'
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.sunfusheng:marqueeview:1.3.3'
+
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'
+
+    compile 'q.rorbin:VerticalTabLayout:1.2.5'
+    compile 'com.github.iwgang:countdownview:2.1.6'
+    compile files('libs/tbs_sdk_thirdapp_v3.6.0.1183_43604_sharewithdownload_withoutGame_obfs_20180211_105126.jar')
+    compile project(':jpush')
+    compile 'com.hyman:flowlayout-lib:1.1.2'
+    compile 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+}

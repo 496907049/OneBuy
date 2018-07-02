@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_top_bar" />
+
+
+    <LinearLayout
+        style="@style/bg_white_round"
+        android:gravity="center_horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/base_margin_large"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_icon_default"
+            app:riv_corner_radius="50dip"
+            app:riv_mutate_background="true" />
+
+        <TextView
+            style="@style/base_text_content.mid_ex"
+            android:layout_marginTop="@dimen/base_margin_large"
+            android:text="@string/user_account_left" />
+
+        <TextView
+            android:id="@+id/text_money"
+            style="@style/base_text_content.large"
+            android:text="0"
+            android:textColor="@color/base_text_yellow"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_charge"
+            style="@style/base_btn_match.margin_big"
+            android:layout_marginBottom="@dimen/base_margin_large"
+            android:text="@string/user_charge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bg_white_round"
+        android:layout_marginTop="@dimen/base_margin_mid"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/view_spend_history"
+            style="@style/base_item_style"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <ImageView
+                style="@style/base_icon_xlarge"
+                android:src="@drawable/icon_spendhistory" />
+
+            <TextView
+                style="@style/base_text_content"
+                android:layout_marginLeft="@dimen/base_margin_small"
+                android:text="@string/user_spend_history" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_charge_history"
+            style="@style/base_item_style"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <ImageView
+                style="@style/base_icon_xlarge"
+                android:src="@drawable/icon_chargehistory" />
+
+            <TextView
+                style="@style/base_text_content"
+                android:layout_marginLeft="@dimen/base_margin_small"
+                android:text="@string/user_charge_history" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

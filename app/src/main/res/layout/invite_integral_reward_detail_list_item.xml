@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/list_item_bg_white_round"
+        >
+
+        <LinearLayout
+            style="@style/base_layout_m_w_h"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_padding_mid"
+            android:paddingLeft="@dimen/base_padding_mid"
+            android:paddingRight="@dimen/base_padding_mid"
+            android:paddingTop="@dimen/base_padding_mid">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_default_image"
+                android:layout_marginRight="@dimen/base_margin_xlarge"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="30dip"
+                app:riv_mutate_background="true" />
+
+            <LinearLayout
+                style="@style/base_layout_m_w_v"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/text_name"
+                    style="@style/base_text_content"
+                    android:textStyle="bold"
+                    android:text="Auctus"
+                    android:textSize="@dimen/base_textsize_mid" />
+
+                <TextView
+                    android:id="@+id/text_des"
+                    style="@style/base_text_content.small.grey"
+                    android:layout_marginTop="@dimen/base_margin_small"
+                    android:text="开发和通用版本" />
+                <TextView
+                    android:id="@+id/text_time"
+                    style="@style/base_text_content.small.grey"
+                    android:layout_marginTop="@dimen/base_margin_xsmall"
+                    android:text="2018/04/18 19:23:51" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_change"
+                style="@style/base_text_content.yellow"
+                android:layout_marginLeft="@dimen/base_margin_small"
+                android:text="+5000"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

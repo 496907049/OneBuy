@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_copyright"></string>
+
+    <!-- 对话框 -->
+    <string name="app_ok">ok</string>
+    <string name="app_cancel">cancel</string>
+    <string name="app_warn">prompt</string>
+    <string name="app_warn_exist_msg">to log out？</string>
+    <string name="app_exit_msg">click again to log out</string>
+    <string name="app_back">back</string>
+    <string name="app_ignore_update">do it later</string>
+    <string name="app_update">update</string>
+    <string name="app_post">submit</string>
+    <string name="app_setting">setting</string>
+    <string name="app_share">share</string>
+    <string name="app_next">next</string>
+    <string name="app_already_new">this is the latest version</string>
+    <string name="app_name_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="app_confirm">confirm</string>
+    <string name="app_save">save</string>
+    <string name="app_not_login_hint">You have not logged in.to log in immediately？</string>
+    <string name="app_logout_hint">log out？</string>
+    <string name="app_login_now">log in</string>
+
+    <!-- 网络 -->
+    <string name="app_net_exc">exc</string>
+    <string name="app_retry">retry</string>
+    <string name="app_data_exception">exception</string>
+    <string name="app_re_load">load</string>
+    <string name="app_data_empty">empty</string>
+    <string name="app_exit">exit</string>
+    <string name="app_refresh">refresh</string>
+    <string name="app_hint">hint</string>
+    <string name="app_reminder">reminder</string>
+    <string name="app_choose_app_please">please choose app</string>
+    <string name="app_data_empty_and_click_torefresh">torefresh\n</string>
+    <string name="app_click_to_reload"></string>
+    <string name="app_service_erro">erro</string>
+
+    <!-- 用户相关 -->
+    <string name="user_login">login</string>
+    <string name="user_no_login_yet">You have not logged in yet</string>
+    <string name="user_login_now">log in</string>
+    <string name="user_user_empty">please input username</string>
+    <string name="user_user_hint">input phone number</string>
+    <string name="user_password_empty">please input password</string>
+    <string name="user_password_hint">password</string>
+    <string name="user_password_current_hint">input current password</string>
+    <string name="user_user_name">user name</string>
+    <string name="user_password_">password</string>
+    <string name="user_your_password">your password:</string>
+    <string name="user_mobile">phone</string>
+    <string name="user_mobile_hint">input your phone</string>
+    <string name="user_mobile_error">phone number is error</string>
+    <string name="user_code">via SMS</string>
+    <string name="user_email">email</string>
+    <string name="user_email_error">email is error</string>
+    <string name="user_code_hint">input via SMS</string>
+    <string name="user_code_empty">via SMS is empty</string>
+    <string name="user_code_send">send</string>
+    <string name="user_code_resend">resend</string>
+    <string name="user_code_disable">Reacquire via SMS</string>
+    <string name="user_mobilecode_hint">input via SMS</string>
+    <string name="user_user_center">user center</string>
+    <string name="user_logout">logout</string>
+    <string name="user_regist">sign up</string>
+    <string name="user_regist_account">account</string>
+    <string name="user_forget_password">rset</string>
+    <string name="user_modify_password">password</string>
+    <string name="user_modify_success">success</string>
+    <string name="user_old_password">current password</string>
+    <string name="user_new_password">password</string>
+    <string name="user_enter_old_password">current password</string>
+    <string name="user_enter_new_password">password</string>
+    <string name="user_enter_new_password_a">new password</string>
+    <string name="user_newpassword_sure_not_same_as_old_password">current and new passwords cannot be the same</string>
+    <string name="user_confirm_password">password</string>
+    <string name="user_enter_password_cofirm">input password again</string>
+    <string name="user_password_cofirm_empty">input password again</string>
+    <string name="user_password_cofirm_notsame">Two passwords are not Consistent</string>
+    <string name="user_regist_protocol">I have read and agree to "the terms of use and privacy policy".</string>
+
+</resources>

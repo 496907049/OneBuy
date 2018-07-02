@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/base_layout_m_w_v"
+        android:background="@drawable/user_index_bg"
+        >
+
+
+        <include
+            layout="@layout/home_page_top_bar"
+            />
+
+        <LinearLayout
+            android:id="@+id/view_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/base_margin_large"
+            android:paddingLeft="@dimen/base_padding_mid"
+            android:paddingRight="@dimen/base_padding_mid"
+            android:paddingTop="@dimen/base_margin_mid">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/user_icon_default"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="30dip"
+                app:riv_mutate_background="true" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:paddingLeft="@dimen/base_padding_mid">
+
+                <TextView
+                    android:id="@+id/text_nologin"
+                    style="@style/base_text_content.mid_ex"
+                    android:text="@string/user_click_to_login"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/view_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/text_name"
+                        style="@style/base_text_content.white"
+                        android:layout_marginBottom="@dimen/base_margin_small"
+                        android:text="名称" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <ImageView style="@style/base_item_img_tag"
+                android:src="@drawable/base_icon_arrow_right_white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv"
+            android:background="@color/transpanrent_white"
+            android:paddingTop="@dimen/base_padding_small"
+            android:paddingBottom="@dimen/base_padding_small"
+            android:paddingLeft="@dimen/base_padding_mid"
+            android:paddingRight="@dimen/base_padding_mid"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1.0"
+                >
+
+            <TextView
+                style="@style/base_text_content.white"
+                android:text="@string/user_account_left"
+                />
+
+                <LinearLayout
+                    style="@style/base_layout_m_w_h"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/text_acount_left"
+                        style="@style/base_text_content.yellow"
+                        android:text="0"
+                        />
+                    <TextView
+                        style="@style/base_text_content.white"
+                        android:text="@string/user_left_count_dollor"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_charge"
+                style="@style/btn_text_small"
+                android:background="@drawable/base_btn_yellow"
+                android:paddingLeft="@dimen/base_padding_mid"
+                android:paddingRight="@dimen/base_padding_mid"
+                android:paddingTop="@dimen/base_margin_xsmall"
+                android:paddingBottom="@dimen/base_margin_xsmall"
+                android:textSize="@dimen/base_textsize_small_ex"
+                android:textStyle="bold"
+                android:text="@string/user_charge"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/user_index_itemzone_bg"
+        android:layout_weight="1.0"
+        android:layout_marginTop="@dimen/base_padding_xsmall"
+        android:layout_marginLeft="@dimen/base_padding_xsmall"
+        android:layout_marginRight="@dimen/base_padding_xsmall"
+        >
+
+        <LinearLayout style="@style/base_layout_m_w_v"
+            >
+
+            <LinearLayout
+                android:id="@+id/view_cyjl"
+                style="@style/base_item_style.smallpadding"
+                android:background="@drawable/base_item_shadow_white_selctor_topround"
+                >
+
+                <ImageView
+                    style="@style/base_item_img_icon"
+                    android:src="@drawable/user_icon_cyjl" />
+
+                <TextView
+                    style="@style/user_item_name"
+                    android:text="@string/user_cyjl" />
+
+                <ImageView style="@style/base_item_img_tag" />
+            </LinearLayout>
+
+            <ImageView style="@style/user_item_divider" />
+
+            <LinearLayout
+                android:id="@+id/view_zjjl"
+                style="@style/base_item_style.smallpadding">
+
+                <ImageView
+                    style="@style/base_item_img_icon"
+                    android:src="@drawable/user_icon_zjjl" />
+
+                <TextView
+                    style="@style/user_item_name"
+                    android:text="@string/user_zjjl" />
+
+                <ImageView style="@style/base_item_img_tag" />
+            </LinearLayout>
+
+            <ImageView style="@style/user_item_divider" />
+
+            <LinearLayout
+                android:id="@+id/view_myshows"
+                style="@style/base_item_style.smallpadding">
+
+                <ImageView
+                    style="@style/base_item_img_icon"
+                    android:src="@drawable/user_icon_myshows" />
+
+                <TextView
+                    style="@style/user_item_name"
+                    android:text="@string/user_myshows" />
+
+                <ImageView style="@style/base_item_img_tag" />
+            </LinearLayout>
+
+            <ImageView style="@style/user_item_divider" />
+
+            <LinearLayout
+                android:id="@+id/view_myaccount"
+                style="@style/base_item_style.smallpadding">
+
+                <ImageView
+                    style="@style/base_item_img_icon"
+                    android:src="@drawable/user_icon_account" />
+
+                <TextView
+                    style="@style/user_item_name"
+                    android:text="@string/user_myaccount" />
+
+                <ImageView style="@style/base_item_img_tag" />
+            </LinearLayout>
+
+            <ImageView style="@style/user_item_divider" />
+
+            <LinearLayout
+                android:id="@+id/view_invite_has_present"
+                style="@style/base_item_style.smallpadding">
+
+                <ImageView
+                    style="@style/base_item_img_icon"
+                    android:src="@drawable/user_icon_gift" />
+
+                <TextView
+                    style="@style/user_item_name"
+                    android:text="@string/invite_invite_has_present" />
+
+                <ImageView style="@style/base_item_img_tag" />
+            </LinearLayout>
+
+            <ImageView style="@style/user_item_divider" />
+
+            <LinearLayout
+                android:id="@+id/view_address"
+                style="@style/base_item_style.smallpadding">
+
+                <ImageView
+                    style="@style/base_item_img_icon"
+                    android:src="@drawable/user_icon_address" />
+
+                <TextView
+                    style="@style/user_item_name"
+                    android:text="@string/user_address" />
+
+                <ImageView style="@style/base_item_img_tag" />
+            </LinearLayout>
+
+            <ImageView style="@style/divider_hor_style.color" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

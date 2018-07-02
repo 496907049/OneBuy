@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_jpush" default="compile.module.jpush">
+  <dirname property="module.jpush.basedir" file="${ant.file.module_jpush}"/>
+  
+  <property name="module.jdk.home.jpush" value="${jdk.home.android_api_26_platform}"/>
+  <property name="module.jdk.bin.jpush" value="${jdk.bin.android_api_26_platform}"/>
+  <property name="module.jdk.classpath.jpush" value="jdk.classpath.android_api_26_platform"/>
+  
+  <property name="compiler.args.jpush" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="jpush.output.dir" value="${module.jpush.basedir}/build/intermediates/classes/debug"/>
+  <property name="jpush.testoutput.dir" value="${module.jpush.basedir}/build/intermediates/classes/test/debug"/>
+  
+  <path id="jpush.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="jpush.module.production.classpath">
+    <path refid="${module.jdk.classpath.jpush}"/>
+    <path refid="library.support-core-ui-26.1.0.classpath"/>
+    <path refid="library.support-media-compat-26.1.0.classpath"/>
+    <path refid="library.jpush-android-3.1.3.classpath"/>
+    <path refid="library.jshare-qq-android-1.5.0.classpath"/>
+    <path refid="library.support-compat-26.1.0.classpath"/>
+    <path refid="library.jshare-facebook-android-1.5.0.classpath"/>
+    <path refid="library.support-annotations-26.1.0.classpath"/>
+    <path refid="library.support-v4-26.1.0.classpath"/>
+    <path refid="library.support-vector-drawable-26.1.0.classpath"/>
+    <path refid="library.support-core-utils-26.1.0.classpath"/>
+    <path refid="library.support-fragment-26.1.0.classpath"/>
+    <path refid="library.animated-vector-drawable-26.1.0.classpath"/>
+    <path refid="library.jshare-sina-android-1.5.0.classpath"/>
+    <path refid="library.runtime-1.0.0.classpath"/>
+    <path refid="library.jshare-wechat-android-1.5.0.classpath"/>
+    <path refid="library.common-1.0.0.classpath"/>
+    <path refid="library.1_common-1.0.0.classpath"/>
+    <path refid="library.jshare-twitter-android-1.5.0.classpath"/>
+    <path refid="library.appcompat-v7-26.1.0.classpath"/>
+    <path refid="library.jshare-android-1.5.0.classpath"/>
+    <path refid="library.jcore-android-1.2.1.classpath"/>
+    <path refid="library.janalytics-android-1.2.1.classpath"/>
+  </path>
+  
+  <path id="jpush.runtime.production.module.classpath">
+    <pathelement location="${jpush.output.dir}"/>
+    <path refid="library.support-core-ui-26.1.0.classpath"/>
+    <path refid="library.support-media-compat-26.1.0.classpath"/>
+    <path refid="library.jpush-android-3.1.3.classpath"/>
+    <path refid="library.jshare-qq-android-1.5.0.classpath"/>
+    <path refid="library.support-compat-26.1.0.classpath"/>
+    <path refid="library.jshare-facebook-android-1.5.0.classpath"/>
+    <path refid="library.support-annotations-26.1.0.classpath"/>
+    <path refid="library.support-v4-26.1.0.classpath"/>
+    <path refid="library.support-vector-drawable-26.1.0.classpath"/>
+    <path refid="library.support-core-utils-26.1.0.classpath"/>
+    <path refid="library.support-fragment-26.1.0.classpath"/>
+    <path refid="library.animated-vector-drawable-26.1.0.classpath"/>
+    <path refid="library.jshare-sina-android-1.5.0.classpath"/>
+    <path refid="library.runtime-1.0.0.classpath"/>
+    <path refid="library.jshare-wechat-android-1.5.0.classpath"/>
+    <path refid="library.common-1.0.0.classpath"/>
+    <path refid="library.1_common-1.0.0.classpath"/>
+    <path refid="library.jshare-twitter-android-1.5.0.classpath"/>
+    <path refid="library.appcompat-v7-26.1.0.classpath"/>
+    <path refid="library.jshare-android-1.5.0.classpath"/>
+    <path refid="library.jcore-android-1.2.1.classpath"/>
+    <path refid="library.janalytics-android-1.2.1.classpath"/>
+  </path>
+  
+  <path id="jpush.module.classpath">
+    <path refid="${module.jdk.classpath.jpush}"/>
+    <pathelement location="${jpush.output.dir}"/>
+    <path refid="library.support-core-ui-26.1.0.classpath"/>
+    <path refid="library.support-media-compat-26.1.0.classpath"/>
+    <path refid="library.jpush-android-3.1.3.classpath"/>
+    <path refid="library.jshare-qq-android-1.5.0.classpath"/>
+    <path refid="library.support-compat-26.1.0.classpath"/>
+    <path refid="library.jshare-facebook-android-1.5.0.classpath"/>
+    <path refid="library.support-annotations-26.1.0.classpath"/>
+    <path refid="library.support-v4-26.1.0.classpath"/>
+    <path refid="library.support-vector-drawable-26.1.0.classpath"/>
+    <path refid="library.support-core-utils-26.1.0.classpath"/>
+    <path refid="library.support-fragment-26.1.0.classpath"/>
+    <path refid="library.animated-vector-drawable-26.1.0.classpath"/>
+    <path refid="library.jshare-sina-android-1.5.0.classpath"/>
+    <path refid="library.runtime-1.0.0.classpath"/>
+    <path refid="library.jshare-wechat-android-1.5.0.classpath"/>
+    <path refid="library.common-1.0.0.classpath"/>
+    <path refid="library.1_common-1.0.0.classpath"/>
+    <path refid="library.jshare-twitter-android-1.5.0.classpath"/>
+    <path refid="library.appcompat-v7-26.1.0.classpath"/>
+    <path refid="library.jshare-android-1.5.0.classpath"/>
+    <path refid="library.jcore-android-1.2.1.classpath"/>
+    <path refid="library.janalytics-android-1.2.1.classpath"/>
+  </path>
+  
+  <path id="jpush.runtime.module.classpath">
+    <pathelement location="${jpush.testoutput.dir}"/>
+    <pathelement location="${jpush.output.dir}"/>
+    <path refid="library.support-core-ui-26.1.0.classpath"/>
+    <path refid="library.support-media-compat-26.1.0.classpath"/>
+    <path refid="library.jpush-android-3.1.3.classpath"/>
+    <path refid="library.jshare-qq-android-1.5.0.classpath"/>
+    <path refid="library.support-compat-26.1.0.classpath"/>
+    <path refid="library.jshare-facebook-android-1.5.0.classpath"/>
+    <path refid="library.support-annotations-26.1.0.classpath"/>
+    <path refid="library.support-v4-26.1.0.classpath"/>
+    <path refid="library.support-vector-drawable-26.1.0.classpath"/>
+    <path refid="library.support-core-utils-26.1.0.classpath"/>
+    <path refid="library.support-fragment-26.1.0.classpath"/>
+    <path refid="library.animated-vector-drawable-26.1.0.classpath"/>
+    <path refid="library.jshare-sina-android-1.5.0.classpath"/>
+    <path refid="library.runtime-1.0.0.classpath"/>
+    <path refid="library.jshare-wechat-android-1.5.0.classpath"/>
+    <path refid="library.common-1.0.0.classpath"/>
+    <path refid="library.1_common-1.0.0.classpath"/>
+    <path refid="library.jshare-twitter-android-1.5.0.classpath"/>
+    <path refid="library.appcompat-v7-26.1.0.classpath"/>
+    <path refid="library.jshare-android-1.5.0.classpath"/>
+    <path refid="library.jcore-android-1.2.1.classpath"/>
+    <path refid="library.janalytics-android-1.2.1.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.jpush">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.jpush">
+    <patternset refid="excluded.from.module.jpush"/>
+  </patternset>
+  
+  <path id="jpush.module.sourcepath">
+    <dirset dir="${module.jpush.basedir}">
+      <include name="build/generated/source/r/debug"/>
+      <include name="build/generated/source/aidl/debug"/>
+      <include name="build/generated/source/buildConfig/debug"/>
+      <include name="src/main/res"/>
+      <include name="src/main/assets"/>
+      <include name="src/main/java"/>
+    </dirset>
+  </path>
+  
+  <path id="jpush.module.test.sourcepath">
+    <dirset dir="${module.jpush.basedir}">
+      <include name="build/generated/source/r/androidTest/debug"/>
+      <include name="build/generated/source/aidl/androidTest/debug"/>
+      <include name="build/generated/source/buildConfig/androidTest/debug"/>
+      <include name="src/test/java"/>
+      <include name="src/androidTest/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.jpush" depends="compile.module.jpush.production,compile.module.jpush.tests" description="Compile module jpush"/>
+  
+  <target name="compile.module.jpush.production" depends="register.custom.compilers" description="Compile module jpush; production classes">
+    <mkdir dir="${jpush.output.dir}"/>
+    <javac2 destdir="${jpush.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.jpush}/javac">
+      <compilerarg line="${compiler.args.jpush}"/>
+      <bootclasspath refid="jpush.module.bootclasspath"/>
+      <classpath refid="jpush.module.production.classpath"/>
+      <src refid="jpush.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.jpush"/>
+    </javac2>
+    
+    <copy todir="${jpush.output.dir}">
+      <fileset dir="${module.jpush.basedir}/build/generated/source/r/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.jpush.basedir}/build/generated/source/aidl/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.jpush.basedir}/build/generated/source/buildConfig/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.jpush.basedir}/src/main/res">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.jpush.basedir}/src/main/assets">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.jpush.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.jpush.tests" depends="register.custom.compilers,compile.module.jpush.production" description="compile module jpush; test classes" unless="skip.tests">
+    <mkdir dir="${jpush.testoutput.dir}"/>
+    <javac2 destdir="${jpush.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.jpush}/javac">
+      <compilerarg line="${compiler.args.jpush}"/>
+      <bootclasspath refid="jpush.module.bootclasspath"/>
+      <classpath refid="jpush.module.classpath"/>
+      <src refid="jpush.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.jpush"/>
+    </javac2>
+    
+    <copy todir="${jpush.testoutput.dir}">
+      <fileset dir="${module.jpush.basedir}/build/generated/source/r/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.jpush.basedir}/build/generated/source/aidl/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.jpush.basedir}/build/generated/source/buildConfig/androidTest/debug">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.jpush.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.jpush.basedir}/src/androidTest/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.jpush" description="cleanup module">
+    <delete dir="${jpush.output.dir}"/>
+    <delete dir="${jpush.testoutput.dir}"/>
+  </target>
+</project>

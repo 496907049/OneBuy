@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/base_layout_m_w_v">
+
+   <ImageView
+       android:id="@+id/img_pic"
+       style="@style/base_layout_w_w"
+       android:scaleType="fitXY"
+       android:padding="@dimen/base_padding_xsmall"/>
+
+</LinearLayout>

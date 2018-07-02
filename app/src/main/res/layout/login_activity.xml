@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/ll01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <ImageView
+                    android:id="@+id/img_close"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/base_padding_xsmall"
+                    android:background="@drawable/base_item_shadow_selector"
+                    android:src="@drawable/icon_close_white"
+                    android:layout_marginRight="@dimen/base_padding_small"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_margin_xxxlarge"
+                android:layout_marginRight="@dimen/base_margin_xxxlarge"
+                android:layout_marginTop="@dimen/base_margin_large"
+                android:layout_marginBottom="@dimen/base_margin_large"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageView1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/login_icon_logo"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout style="@style/base_layout_m_w_h"
+                    android:layout_marginTop="@dimen/base_margin_large"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/login_edit_bg"
+                    >
+                    <LinearLayout
+                        android:id="@+id/view_country"
+                        style="@style/base_layout_w_m_h"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            style="@style/base_text_content.white"
+                            android:text="+" />
+                        <TextView
+                            android:id="@+id/text_mobile_zone_num"
+                            style="@style/base_text_content.small.white"
+                            android:layout_marginRight="@dimen/base_margin_xsmall"
+                            android:text="86" />
+                        <ImageView
+                            style="@style/base_icon_small"
+                            android:src="@drawable/icon_arrow_down_white"
+                            />
+                    </LinearLayout>
+                    <ImageView
+                        style="@style/divider_ver_style.color"
+                        android:layout_marginBottom="@dimen/base_margin_small"
+                        android:layout_marginTop="@dimen/base_margin_small"
+                        android:layout_marginLeft="@dimen/base_padding_xsmall"
+                        />
+                    <ImageView
+                        style="@style/base_icon_mid"
+                        android:src="@drawable/login_icon_mobile"
+                        android:visibility="gone"
+                        />
+
+                    <EditText
+                        android:id="@+id/eidt_user"
+                        style="@style/base_edit.small"
+                        android:layout_weight="1.0"
+                        android:inputType="number"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:hint="@string/login_hint_mobile"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/base_layout_m_w_h"
+                    android:layout_marginTop="@dimen/base_margin_mid"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/login_edit_bg"
+                    >
+
+                    <ImageView
+                        style="@style/base_icon_mid"
+                        android:src="@drawable/login_icon_pwd"
+                        />
+
+                    <EditText
+                        android:id="@+id/edit_pwd"
+                        style="@style/base_edit.small"
+                        android:layout_weight="1.0"
+                        android:hint="@string/login_hint_pwd"
+                        android:inputType="textPassword"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:singleLine="true"
+                        android:imeOptions="actionGo"
+                        android:maxLength="20"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_forgetpwd"
+                        style="@style/base_text_content.small"
+                        android:background="@drawable/base_item_shadow_selector"
+                        android:padding="12dp"
+                        android:text="忘记密码"
+                        android:textColor="@color/base_text_yellow" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_login"
+                    style="@style/login_btn"
+                    android:layout_marginBottom="@dimen/base_margin_mid"
+                    android:layout_marginTop="@dimen/base_margin_large"
+                    android:text="@string/user_login" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_regist"
+                        style="@style/base_text_content.white"
+                        android:background="@drawable/base_item_shadow_selector"
+                        android:padding="12dp"
+                        android:text="@string/user_regist_account" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/base_layout_m_w_h_cv"
+                android:layout_marginLeft="@dimen/base_margin_xlarge"
+                android:layout_marginRight="@dimen/base_margin_xlarge"
+                >
+                <ImageView
+                    style="@style/divider_hor_style.color"
+                    android:background="@color/white"
+                    android:layout_marginRight="@dimen/base_margin_mid"
+                    android:layout_weight="1.0"
+                    />
+                <TextView
+                    style="@style/base_text_content.small.white"
+                    android:text="@string/login_or"
+                    />
+                <ImageView
+                    style="@style/divider_hor_style.color"
+                    android:background="@color/white"
+                    android:layout_marginLeft="@dimen/base_margin_mid"
+                    android:layout_weight="1.0"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/base_layout_m_w_h_cv"
+                android:layout_marginTop="@dimen/base_margin_mid"
+                android:layout_marginBottom="@dimen/base_margin_mid"
+                android:gravity="center"
+                >
+                <ImageView
+                    style="@style/login_img_thirdlogin"
+                    android:src="@drawable/login_icon_facebook"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

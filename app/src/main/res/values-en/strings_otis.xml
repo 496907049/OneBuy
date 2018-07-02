@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_page_titile">1 m winner</string>
+    <string name="commodity_classification">Category</string>
+    <string name="commodity_info">Commodity information</string>
+    <string name="img_txt_info">graphic and text</string>
+    <string name="classification">Category</string>
+    <string name="recharge">Account recharge</string>
+    <string name="help_center">Help Center</string>
+    <string name="popularity">Recommendation</string>
+    <string name="commodity_name">commodity_name</string>
+    <string name="value">value</string>
+    <string name="total_number">total_number</string>
+    <string name="remainder">remainder</string>
+    <string name="no">no：</string>
+    <string name="status">status：  </string>
+    <string name="statement">All goods and activities have nothing to do with Apple Corp (apple.inc.).</string>
+    <string name="calculation_details">calculation_details</string>
+    <string name="ending_time">ending_time</string>
+    <string name="join">join</string>
+    <string name="join_num">join_num</string>
+    <string name="date_of_winning">date_of_winning</string>
+    <string name="award_winner">award_winner:</string>
+    <string name="num_of_participants">num_of_participants:</string>
+    <string name="people_num">people_num</string>
+    <string name="winning_numbers">winning_numbers:</string>
+    <string name="win_numbers">win_numbers:</string>
+    <string name="open_time">open_time:</string>
+    <string name="time">2018-03-28</string>
+    <string name="frequency">frequency</string>
+    <string name="next_e_gou">The new issue is underway...</string>
+    <string name="go_to_next">enter</string>
+    <string name="prize_code">prize_code</string>
+    <string name="announced">announced</string>
+    <string name="lottery">lottery</string>
+    <string name="share">share</string>
+    <string name="total_need">total_need</string>
+    <string name="people">people</string>
+    <string name="surplus">surplus</string>
+    <string name="hot_search">hot_search</string>
+    <string name="equal"> = </string>
+    <string name="plus"> + </string>
+    <string name="how_much_people">how_much_people</string>
+    <string name="value_a"> value_a</string>
+    <string name="spread"> spread</string>
+    <string name="cal_result"> cal_result</string>
+    <!--  新增  -->
+    <string name="qu_yu"> 取余数 </string>
+    <string name="number">数值</string>
+    <string name="value_rule">截至该商品开奖时间前最后100条全部参与记录时间总和</string>
+    <string name="cal_mode_and_explain">计算方式及说明</string>
+    <string name="explain1">1. 商品的最后一个号码分配完毕后，将公示该分配时间点前本站全部商品的最后100个参与时间；</string>
+    <string name="explain2">2. 将这100个时间的数值进行求和（得出数值A）（每个时间按时、分、秒、毫秒的顺序组合，如20:15:25.362则为201525362）；</string>
+    <string name="explain3">3. 数值A除以该商品总需人次得到的余数 + 原始数 10000001，得到最终幸运号码，拥有该幸运号码者，直接获得该商品。</string>
+    <string name="search">搜索</string>
+    <string name="history">历史记录</string>
+    <string name="join_time">参与时间</string>
+    <string name="right_arrow"> -></string>
+    <string name="conversion_data">转换数据 -></string>
+    <string name="nickname">用户昵称</string>
+    <string name="take_up">收起</string>
+    <string name="clear_search_records">清除搜索历史</string>
+    <string name="all">all</string>
+    <string name="doing">doing</string>
+    <string name="unveiled">已揭晓</string>
+</resources>

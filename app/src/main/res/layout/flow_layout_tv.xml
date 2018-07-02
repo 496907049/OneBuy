@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:paddingLeft="@dimen/base_margin_small"
+    android:paddingRight="@dimen/base_margin_small"
+    android:paddingBottom="@dimen/base_margin_xsmall"
+    android:paddingTop="@dimen/base_margin_xsmall"
+    android:background="@drawable/fillet_gray"
+    android:text="Helloworld"
+    android:textColor="@color/base_text_grey">
+</TextView>

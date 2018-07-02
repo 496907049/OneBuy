@@ -1,0 +1,15 @@
+<resources>
+
+    <dimen name="loading_icon_width">1150dp</dimen>
+
+    <dimen name="home_top_bar_height">95dp</dimen>
+    <dimen name="base_default_radius">5dp</dimen>
+    <dimen name="base_default_radius_mid">10dp</dimen>
+    <dimen name="base_default_radius_large">15dp</dimen>
+    <dimen name="userindex_bg_top_radius">15dp</dimen>
+    <dimen name="login_btn_radius">18dp</dimen>
+
+    <dimen name="dialog_activity_margin_hor">200dp</dimen>
+    <dimen name="dialog_activity_margin_ver">80dp</dimen>
+
+</resources>

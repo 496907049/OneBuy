@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">E购</string>
+    <string name="login_hint_mobile">请输入手机号码</string>
+    <string name="login_hint_pwd">请输入登录密码</string>
+    <string name="regist_pwd_hint">设置登录密码</string>
+    <string name="regist_pwd_againt_hint">确认登录密码</string>
+    <string name="login_msgcode_hint">短信验证码</string>
+    <string name="login_or">OR</string>
+    <string name="regist_alreadyread">已阅读并同意</string>
+    <string name="regist_user_rules">《用户服务协议》</string>
+
+    <string name="home_index">首页</string>
+    <string name="home_new">最新揭晓</string>
+    <string name="home_shows">晒单</string>
+    <string name="home_user">我的</string>
+
+    <string name="user_cyjl">参与记录</string>
+    <string name="user_zjjl">中奖记录</string>
+    <string name="user_my_zjjl">我的中奖</string>
+    <string name="user_myshows">我的晒单</string>
+    <string name="user_myaccount">我的账户</string>
+    <string name="user_address">地址管理</string>
+    <string name="user_userinfo">个人信息</string>
+    <string name="user_choose_payway">选择支付方式</string>
+
+    <string name="user_account_left">账户余额</string>
+    <string name="user_left_count_dollor">比索</string>
+    <string name="user_charge">充值</string>
+    <string name="user_charge_history">充值记录</string>
+    <string name="user_spend_history">消费记录</string>
+    <string name="user_need_pay">需支付</string>
+    <string name="user_charge_hint_one">1、您充值购买的比索仅可用于平台抽奖活动；</string>
+    <string name="user_charge_hint_second">2、我的账户余额不能兑换现金、不支持提现。</string>
+
+
+    <string name="setting_change_language">切换语言</string>
+    <string name="setting_chinese">中文</string>
+    <string name="setting_english">英语</string>
+    <string name="setting_default">默认</string>
+
+    <string name="info_nickname">昵        称</string>
+    <string name="info_modify_pwd">修改密码</string>
+    <string name="info_modify_mobile">修改手机</string>
+    <string name="info_click_tomodify">点击修改头像</string>
+    <string name="join_number">参与码</string>
+
+    <string name="confirm_delivery">确认收货</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_finish">交易完成</string>
+    <string name="order_share_hint">宝贝是否满足了您的期待？晒单分享给其他伙伴吧~</string>
+    <string name="order_delete_order">删除订单</string>
+    <string name="order_apply_aftersales">申请售后</string>
+    <string name="order_comment_goods">评价商品</string>
+    <string name="order_buy_again">再次购买</string>
+    <string name="order_choose_address">选择收货人</string>
+    <string name="order_period_num">期号：</string>
+    <string name="order_order_num">本期参与：%1$s人次</string>
+    <string name="order_lucky_start">幸运之星：</string>
+    <string name="order_lucky_num">幸运号码</string>
+    <string name="order_peole_times">人次</string>
+    <string name="order_delivery_info">收货信息</string>
+    <string name="order_goto_show">去晒单</string>
+    <string name="order_goods_totalprice">商品合计</string>
+    <string name="order_pay_now">立即支付</string>
+    <string name="order_go_charge">去充值</string>
+    <string name="order_pay_byaccount">余额支付</string>
+    <string name="order_pay_bywechat">微信支付</string>
+    <string name="order_pay_byleftdes">(账户余额：%s)</string>
+    <string name="order_submit_title">填写订单</string>
+    <string name="order_goods_left_changce">剩余%d人次</string>
+    <string name="order_wait_receive">待收货</string>
+    <string name="order_wait_send">待发货</string>
+    <string name="address_edit">编辑</string>
+    <string name="address_delete">删除</string>
+    <string name="address_delete_address_now">是否删除该收货地址信息?</string>
+    <string name="address_delete_now">立即删除</string>
+    <string name="address_name">姓        名</string>
+    <string name="address_enter_delivery_name">请输入收货人姓名</string>
+    <string name="address_enter_delivery_mobile">请输入收货人手机号码</string>
+    <string name="address_location">所在区域</string>
+    <string name="address_enter_location">选择所在省份  城市  区县</string>
+    <string name="address_detail_address">详细地址</string>
+    <string name="address_enter_detail_address">请输入收货地址</string>
+
+    <string name="comment_please_enter_conent">请输入晒单内容</string>
+    <string name="comment_delete_comment_now">是否删除评价？</string>
+    <string name="comment_delete">删除</string>
+    <string name="show_upload_img">上传图片（最多3张）</string>
+    <string name="show_addshow">晒单</string>
+
+
+    <string name="user_enter_new_mobile">输入新的手机号码</string>
+    <string name="user_enter_mobile">输入手机号码</string>
+    <string name="modify_mobile_hint">手机号码修改成功后需要使用新的手机号码进行登录。</string>
+
+    <string name="invite_invite_now">立即邀请</string>
+    <string name="invite_invite_has_present">邀请有礼</string>
+    <string name="invite_my_invite_history">我的邀请战绩</string>
+    <string name="invite_success_invite">成功邀请</string>
+    <string name="invite_invite_rewrard">邀请奖励</string>
+    <string name="unit_people">人</string>
+    <string name="unit_money">比索</string>
+    <string name="unit_people_holder">%s人</string>
+    <string name="unit_money_holder">%s比索</string>
+    <!--  新增  -->
+    <string name="user_click_to_login">点击登录</string>
+    <string name="setting_clear_cache_success">清除缓存成功</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_check_update">检查更新</string>
+</resources>

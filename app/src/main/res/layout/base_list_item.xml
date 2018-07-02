@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    style="@style/base_item_style"
+	    android:duplicateParentState="true"
+	    >
+	    <TextView 
+	        android:id="@+id/text_name"
+	        style="@style/base_text_content"
+	        android:maxLines="1"
+	        android:layout_weight="1.0"
+	        />
+	    
+	    <ImageView 
+	        android:id="@+id/list_icon"
+	        style="@style/base_icon_mid"
+	        android:scaleType="fitXY"
+	        android:visibility="gone"
+	        android:duplicateParentState="true"
+	        />
+	</LinearLayout>
+	<ImageView 
+	    style="@style/divider_hor_style"
+	    />
+</LinearLayout>

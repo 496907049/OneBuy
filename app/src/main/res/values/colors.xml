@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cb2d3e</color>
+    <color name="colorPrimaryDark">#cb2d3e</color>
+    <color name="colorAccent">#cb2d3e</color>
+    <color name="login_btn_bg">#f7b32d</color>
+    <color name="login_btn_bg_pressed">#f28a16</color>
+    <color name="user_divider">#dcdddd</color>
+</resources>

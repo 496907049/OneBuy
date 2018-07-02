@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_top_bar" />
+
+
+    <LinearLayout
+        style="@style/bg_white_round"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:paddingTop="@dimen/base_padding_large"
+        android:paddingRight="@dimen/base_padding_large"
+        android:paddingLeft="@dimen/base_padding_large"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_grey_rect"
+            android:padding="@dimen/base_padding_mid_ex"
+            >
+            <LinearLayout
+                style="@style/base_layout_m_w_h_cv">
+                <TextView
+                    style="@style/user_item_title"
+                    android:text="@string/user_charge" />
+                <EditText
+                    android:id="@+id/edit_num"
+                    style="@style/base_item_edit_style"
+                    android:inputType="number"
+                    android:hint="@string/how_much_peso"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/base_layout_m_w_h_cv"
+                android:layout_marginTop="@dimen/base_margin_small"
+                android:visibility="gone">
+                <TextView
+                    style="@style/user_item_title"
+                    android:text="@string/user_need_pay"
+                    />
+                <TextView
+                    android:id="@+id/tv_pay_num"
+                    style="@style/base_text_content.yellow"
+                    android:text="0"
+                    />
+                <TextView
+                    style="@style/base_text_content"
+                    android:layout_marginLeft="@dimen/base_margin_small"
+                    android:text="元"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/base_text_content"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/base_textsize_small"
+            android:layout_marginTop="@dimen/base_margin_xlarge"
+            android:text="@string/user_choose_payway" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/btn_ok"
+            style="@style/base_btn_match"
+            android:layout_marginTop="@dimen/base_margin_xlarge"
+            android:text="@string/app_next" />
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv"
+            android:layout_marginTop="@dimen/base_margin_mid"
+            android:paddingLeft="@dimen/base_padding_small"
+            >
+            <ImageView
+                style="@style/base_icon_large"
+                android:src="@drawable/icon_hint_grey"
+                android:visibility="gone"
+                />
+            <TextView
+                style="@style/base_text_content.small.grey"
+                android:text="@string/app_reminder"
+                />
+            <TextView
+                style="@style/base_text_content.small.grey"
+                android:text=":"
+                />
+        </LinearLayout>
+            <TextView
+                style="@style/base_text_content.small.grey"
+                android:layout_width="match_parent"
+                android:text="@string/user_charge_hint_one"
+                android:paddingLeft="@dimen/base_padding_small"
+                />
+            <TextView
+                style="@style/base_text_content.small.grey"
+                android:layout_width="match_parent"
+                android:text="@string/user_charge_hint_second"
+                android:paddingLeft="@dimen/base_padding_small"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>

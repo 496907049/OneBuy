@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/base_layout_m_w_v">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true"
+        >
+        
+        <LinearLayout
+            style="@style/base_layout_m_m_v"
+            android:layout_marginTop="@dimen/base_margin_small"
+            android:layout_marginBottom="@dimen/base_margin_small"
+            android:layout_marginLeft="@dimen/base_margin_large"
+            android:layout_marginRight="@dimen/base_margin_large"
+
+            >
+            
+            <TextView
+                style="@style/commodity_text_yellow_size16sp"
+                android:text="【10011期】Apple/苹果iphone 8"/>
+            
+            <LinearLayout
+                style="@style/base_layout_m_m_h"
+                android:layout_marginTop="@dimen/base_margin_small">
+                
+                <ImageView
+                  style="@style/base_layout_m_m"
+                    android:scaleType="fitXY"
+                    android:layout_weight="2"
+                    android:src="@mipmap/lunbo3"/>
+
+                <LinearLayout
+                   style="@style/base_layout_m_m_v"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/base_margin_small">
+
+                    <LinearLayout
+                        style="@style/base_layout_m_m_h"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_award_winner"
+                            style="@style/commodity_text_gray_size14sp"
+                            android:text="@string/award_winner"
+                            android:layout_weight="2"/>
+
+                        <TextView
+                            android:id="@+id/tv_award_winner_num"
+                            style="@style/commodity_text_gray_size14sp"
+                            android:text="sdfsf"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/base_layout_m_m_h"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_prize_code"
+                            style="@style/commodity_text_gray_size14sp"
+                            android:text="@string/prize_code"
+                            android:layout_weight="2"/>
+
+                        <TextView
+                            android:id="@+id/tv_prize_code_num"
+                            style="@style/commodity_text_gray_size14sp"
+                            android:text="15442554"
+                            android:layout_weight="1"
+                            android:textColor="@color/base_color_red"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/base_layout_m_m_h"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_announced"
+                            style="@style/commodity_text_gray_size14sp"
+                            android:text="@string/announced"
+                            android:layout_weight="2"/>
+
+                        <TextView
+                            android:id="@+id/tv_announced_time"
+                            style="@style/commodity_text_gray_size14sp"
+                            android:text="2018-03-58 19:25:56"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+
+         
+
+        </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

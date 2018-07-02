@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="base_layout_m_w_v_c">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="commodity_text_yellow_size16sp" parent="@style/base_layout_w_w">
+        <item name="android:textColor">@color/text_yellow_color</item>
+        <item name="android:textSize">@dimen/base_textsize_small_ex</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="commodity_text_yellow_size14sp" parent="@style/base_layout_m_w">
+        <item name="android:textColor">@color/text_yellow_color</item>
+        <item name="android:textSize">@dimen/base_textsize_small</item>
+    </style>
+
+    <style name="commodity_text_black_size16sp" parent="@style/base_layout_m_w">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/base_textsize_small_ex</item>
+    </style>
+
+    <style name="commodity_text_black_size14sp" parent="@style/base_layout_m_w">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/base_textsize_small</item>
+    </style>
+
+    <style name="commodity_text_gray_size16sp" parent="@style/base_layout_m_w">
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">@dimen/base_textsize_small_ex</item>
+    </style>
+
+    <style name="commodity_text_gray_size14sp" parent="@style/base_layout_w_w">
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">@dimen/base_textsize_small</item>
+    </style>
+
+    <style name="commodity_text_red_size14sp" parent="@style/base_layout_w_w">
+        <item name="android:textColor">@color/base_text_red</item>
+        <item name="android:textSize">@dimen/base_textsize_small</item>
+    </style>
+
+    <style name="commodity_text_gray_size10sp" parent="@style/base_layout_w_w">
+        <item name="android:textColor">@color/base_text_hint</item>
+        <item name="android:textSize">@dimen/base_textsize_xsmall</item>
+    </style>
+
+    <style name="commodity_text_white_size16sp" parent="@style/base_layout_m_w">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/base_textsize_small_ex</item>
+    </style>
+
+    <style name="commodity_text_white_size14sp" parent="@style/base_layout_m_w">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/base_textsize_small</item>
+    </style>
+
+    <style name="my_line">
+        <item name="android:background">@color/home_base_gray</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="my_img" parent="@style/base_layout_m_w">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:src">@drawable/base_refresh_icon_click</item>
+    </style>
+
+
+    <style name="ll_publish" parent="@style/base_layout_m_w_v">
+        <item name="android:layout_marginTop">@dimen/base_margin_small</item>
+        <item name="android:layout_marginBottom">@dimen/base_margin_small</item>
+        <item name="android:background">@drawable/fillet_yellow</item>
+        <item name="android:paddingLeft">@dimen/base_padding_large</item>
+        <item name="android:paddingRight">@dimen/base_padding_large</item>
+        <item name="android:paddingTop">@dimen/base_padding_small</item>
+        <item name="android:paddingBottom">@dimen/base_padding_small</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="ll_end" parent="@style/base_layout_m_w_v">
+        <item name="android:background">@drawable/fillet_yellow_frame</item>
+        <item name="android:layout_marginLeft">@dimen/base_margin_xlarge</item>
+        <item name="android:layout_marginRight">@dimen/base_margin_xlarge</item>
+        <item name="android:layout_marginTop">@dimen/base_margin_xsmall</item>
+        <item name="android:padding">1dp</item>
+    </style>
+    
+    <style name="cal_btn_hdpi">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@drawable/text_white_fillet</item>
+        <item name="android:text">@string/calculation_details</item>
+        <item name="android:textColor">@color/text_yellow_color</item>
+        <item name="android:textSize">@dimen/base_textsize_small</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="cal_btn_xhdpi">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/text_white_fillet</item>
+        <item name="android:text">@string/calculation_details</item>
+        <item name="android:textColor">@color/text_yellow_color</item>
+        <item name="android:textSize">@dimen/base_textsize_small</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ll_from_cal_info" parent="@style/base_layout_m_w_v">
+        <item name="android:paddingRight">@dimen/base_padding_small</item>
+        <item name="android:paddingLeft">@dimen/base_padding_small</item>
+        <item name="android:paddingBottom">@dimen/base_padding_mid</item>
+        <item name="android:paddingTop">@dimen/base_padding_mid</item>
+
+    </style>
+
+
+</resources>

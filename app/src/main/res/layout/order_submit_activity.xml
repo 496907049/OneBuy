@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_top_bar" />
+
+
+    <LinearLayout
+        style="@style/bg_white_round"
+        android:padding="@dimen/base_padding_mid">
+
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv">
+            <ImageView
+                android:id="@+id/img_photo"
+                style="@style/base_icon_fitxy"
+                android:layout_width="120dp"
+                android:layout_height="90dp" />
+            <LinearLayout
+                style="@style/base_layout_m_w_v"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="@dimen/base_margin_mid"
+                >
+                <TextView
+                    android:id="@+id/text_goodsname"
+                    style="@style/base_text_content.yellow"
+                    android:maxLines="2"
+                    />
+                <TextView
+                    android:id="@+id/text_leftchance"
+                    style="@style/base_text_content.small.grey"
+                    />
+                <LinearLayout
+                    style="@style/base_layout_m_w_h_cv"
+                    android:layout_marginTop="@dimen/base_margin_small"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_minus"
+                        style="@style/base_icon_large"
+                        android:src="@drawable/order_icon_minus"
+                        />
+                    <TextView
+                        android:id="@+id/text_order_num"
+                        style="@style/base_text_content.match"
+                        android:paddingTop="@dimen/base_padding_xxsmall"
+                        android:paddingBottom="@dimen/base_padding_xxsmall"
+                        android:layout_marginLeft="@dimen/base_margin_small"
+                        android:layout_marginRight="@dimen/base_margin_small"
+                        android:background="@drawable/bg_grey_round_fill"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="1"
+                        />
+                    <ImageView
+                        android:id="@+id/img_plus"
+                        style="@style/base_icon_large"
+                        android:src="@drawable/order_icon_plus"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/base_layout_m_w_h_cv"
+                    android:layout_marginTop="@dimen/base_margin_small"
+                    >
+                    <TextView
+                        android:id="@+id/btn_five"
+                        style="@style/order_submit_numbtn"
+                        android:text="5"
+                        />
+                    <TextView
+                        android:id="@+id/btn_ten"
+                        style="@style/order_submit_numbtn"
+                        android:text="10"
+                        />
+                    <TextView
+                        android:id="@+id/btn_twenty"
+                        style="@style/order_submit_numbtn"
+                        android:text="20"
+                        />
+                    <TextView
+                        android:id="@+id/btn_fifty"
+                        style="@style/order_submit_numbtn"
+                        android:text="50"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/divider_hor_style.color"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/base_margin_mid"
+            />
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv"
+            android:layout_marginTop="@dimen/base_margin_mid"
+            >
+            <TextView
+                style="@style/base_text_content"
+                android:text="@string/order_goods_totalprice"
+                />
+            <TextView
+                android:id="@+id/text_price"
+                style="@style/base_text_content.match"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                android:text="0"
+                />
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            style="@style/bg_white_round"
+            android:layout_marginTop="@dimen/base_margin_small"
+            >
+            <TextView
+                style="@style/base_item_textonly"
+                android:textSize="@dimen/base_textsize_small"
+                android:layout_marginTop="@dimen/base_margin_small"
+                android:text="@string/user_choose_payway" />
+            <ImageView
+                style="@style/divider_hor_style.color" />
+            <LinearLayout
+                android:id="@+id/view_paybyleft"
+                style="@style/base_item_style.whiteonly">
+                <ImageView
+                    style="@style/base_icon_xlarge"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/checbox_red_seletor"
+                    />
+                <TextView
+                    style="@style/order_payway_text"
+                    android:text="@string/order_pay_byaccount"
+                    />
+                <TextView
+                    android:id="@+id/text_paybyleft_des"
+                    style="@style/base_text_content.small.grey"
+                    android:text="@string/order_pay_byleftdes"
+                    />
+            </LinearLayout>
+            <ImageView
+                style="@style/divider_hor_style.maginleft" />
+            <LinearLayout
+                android:id="@+id/view_paybywechat"
+                style="@style/base_item_style.whiteonly">
+                <ImageView
+                    style="@style/base_icon_xlarge"
+                    android:duplicateParentState="true"
+                    android:src="@drawable/checbox_red_seletor"
+                    />
+                <TextView
+                    style="@style/order_payway_text"
+                    android:text="@string/order_pay_bywechat"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/base_layout_m_m_v"
+        android:layout_weight="1.0"
+        ></LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_ok"
+            style="@style/base_btn_match"
+            android:layout_marginLeft="@dimen/base_margin_large"
+            android:layout_marginRight="@dimen/base_margin_large"
+            android:layout_marginTop="@dimen/base_margin_xlarge"
+            android:text="@string/order_pay_now" />
+        <TextView
+            android:id="@+id/btn_charge"
+            style="@style/base_btn_match"
+            android:layout_marginLeft="@dimen/base_margin_large"
+            android:layout_marginRight="@dimen/base_margin_large"
+            android:background="@drawable/fillet_gray"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/base_margin_mid"
+            android:text="@string/order_go_charge"
+            android:layout_marginBottom="@dimen/base_margin_large"
+            />
+
+
+</LinearLayout>

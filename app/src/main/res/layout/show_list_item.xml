@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    style="@style/base_layout_m_w_v"
+		android:paddingTop="@dimen/base_padding_mid"
+		android:paddingBottom="@dimen/base_padding_mid"
+		android:paddingLeft="@dimen/base_padding_mid"
+		android:paddingRight="@dimen/base_padding_mid"
+	    >
+		<LinearLayout
+			style="@style/base_layout_m_w_h_cv">
+
+
+			<com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/img_photo"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@drawable/user_icon_default"
+				android:scaleType="fitXY"
+				app:riv_corner_radius="30dip"
+				app:riv_mutate_background="true" />
+
+			<LinearLayout
+				style="@style/base_layout_m_w_v"
+				android:layout_weight="1.0"
+				android:layout_marginLeft="@dimen/base_margin_mid"
+				>
+				<LinearLayout
+					style="@style/base_layout_m_w_h_cv">
+					<TextView
+						android:id="@+id/text_name"
+						style="@style/base_text_content"
+						android:layout_weight="1.0"
+						android:text="呆呆症"
+						/>
+					<TextView
+						android:id="@+id/text_time"
+						style="@style/base_text_content.small.grey"
+						android:text="2018-03-29"
+						/>
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/text_title"
+					style="@style/base_text_content"
+					android:layout_marginTop="@dimen/base_margin_small"
+					android:text="【110011期】中国移动充值卡100元"
+					android:maxLines="2"
+					/>
+			</LinearLayout>
+
+		</LinearLayout>
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerview"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/base_margin_mid"
+			></android.support.v7.widget.RecyclerView>
+		<TextView
+			android:id="@+id/text_content"
+			style="@style/base_text_content.small.grey"
+			android:layout_marginTop="@dimen/base_margin_mid"
+			android:layout_marginLeft="@dimen/base_margin_small_plus"
+			android:text="评论内容"
+			/>
+	</LinearLayout>
+	<ImageView 
+	    style="@style/divider_hor_style"
+	    />
+</LinearLayout>

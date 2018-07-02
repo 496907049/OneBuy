@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/base_bg_white" >
+
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:layout_marginBottom="@dimen/base_bar_height"
+             >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:visibility="gone" >
+        </TabWidget>
+
+        
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+             android:layout_gravity="bottom"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/line_on_top">
+
+                <ImageView
+                    android:id="@+id/scroll_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.0"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@color/transparent"
+                     />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="0dp" >
+
+                <LinearLayout
+                    android:id="@+id/main_tab_but_1"
+                    style="@style/base_tab_item" >
+
+                    <ImageView
+                        android:id="@+id/main_tab_imge_1"
+                        style="@style/base_tab_item_icon"
+                        android:src="@drawable/home_btn_index" />
+
+                    <TextView
+                        android:id="@+id/main_tab_text_1"
+                        style="@style/base_tab_item_text"
+                        android:text="@string/home_index" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_tab_but_2"
+                    style="@style/base_tab_item" >
+
+                    <ImageView
+                        android:id="@+id/main_tab_imge_2"
+                        style="@style/base_tab_item_icon"
+                        android:src="@drawable/home_btn_clock" />
+
+                    <TextView
+                        android:id="@+id/main_tab_text_2"
+                        style="@style/base_tab_item_text"
+                        android:text="@string/home_new" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_tab_but_3"
+                    style="@style/base_tab_item"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/main_tab_imge_3"
+                        style="@style/base_tab_item_icon"
+                        android:src="@drawable/home_btn_shows" />
+
+                    <TextView
+                        android:id="@+id/main_tab_text_3"
+                        style="@style/base_tab_item_text"
+                        android:text="@string/home_shows"  />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_tab_but_4"
+                    style="@style/base_tab_item"
+                     >
+
+                    <ImageView
+                        android:id="@+id/main_tab_imge_4"
+                        style="@style/base_tab_item_icon"
+                        android:src="@drawable/home_btn_user" />
+
+                    <TextView
+                        android:id="@+id/main_tab_text_4"
+                        style="@style/base_tab_item_text"
+                        android:text="@string/home_user" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_tab_but_5"
+                    style="@style/base_tab_item"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/main_tab_imge_5"
+                        style="@style/base_tab_item_icon" />
+
+                    <TextView
+                        android:id="@+id/main_tab_text_5"
+                        style="@style/base_tab_item_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+</TabHost>

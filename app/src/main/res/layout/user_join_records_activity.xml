@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="0dp"
+            app:expandedTitleMarginStart="0dp"
+            app:statusBarScrim="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_bar_height"
+                app:contentInsetEnd="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:layout_scrollFlags="scroll|enterAlways"
+                >
+
+                <include
+                    layout="@layout/base_top_bar"
+                    />
+            </android.support.v7.widget.Toolbar>
+
+            <com.flyco.tablayout.CommonTabLayout xmlns:tl="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/base_margin_xsmall"
+                android:paddingTop="@dimen/base_margin_xsmall"
+                android:layout_gravity="bottom"
+                tl:tl_indicator_color="@color/base_color_red"
+                tl:tl_textSelectColor="@color/base_color_red"
+                tl:tl_textUnselectColor="@color/base_text_black_grey"
+                tl:tl_underline_color="@color/base_bg_white"
+                tl:tl_textsize="@dimen/base_textsize_mid"
+                tl:tl_underline_height="1dp"
+                tl:tl_indicator_width="70dp" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_weight="1.0"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

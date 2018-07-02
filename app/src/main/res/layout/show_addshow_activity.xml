@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/base_top_bar"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/base_layout_m_m">
+
+        <LinearLayout style="@style/list_item_bg_white_round"
+            android:padding="@dimen/base_padding_mid"
+            android:orientation="vertical"
+            >
+
+            <!--       android:background="@drawable/bg_grey_rect"-->
+
+            <RelativeLayout style="@style/base_layout_m_w"
+                android:background="@drawable/bg_grey_rect"
+                android:paddingBottom="@dimen/base_padding_xsmall"
+                android:paddingLeft="@dimen/base_padding_xsmall">
+
+                <EditText
+                    android:id="@+id/edit_conent"
+                    style="@style/base_edit"
+                    android:textColorHighlight="#cccccc"
+                    android:gravity="top|left"
+                    android:hint="@string/order_share_hint"
+                    android:minLines="5"
+                    android:maxLength="500"
+                    android:fitsSystemWindows="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_max_length"
+                    style="@style/base_text_content"
+                    android:text="0/500"
+                    android:layout_below="@id/edit_conent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/base_margin_xsmall"/>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/base_text_content"
+                android:layout_marginTop="@dimen/base_margin_xlarge"
+                android:layout_marginLeft="@dimen/base_margin_small"
+                android:text="@string/show_upload_img"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                style="@style/base_layout_m_w"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:listitem="@layout/show_addshow_img_grid_item"/>
+            <Button
+                android:id="@+id/btn_ok"
+                style="@style/base_btn_match.margin_big"
+                android:background="@drawable/base_btn_red_gradient"
+                android:text="@string/app_post"
+                android:layout_marginTop="@dimen/base_margin_xlarge"
+                android:layout_marginBottom="@dimen/base_margin_large"
+                />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

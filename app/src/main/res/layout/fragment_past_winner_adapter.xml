@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/base_padding_small"
+        android:layout_weight="1">
+
+        <!--    开奖时间    -->
+        <LinearLayout
+            style="@style/base_layout_m_w_h"
+            >
+            <TextView
+                android:id="@+id/tv_date_of_winning"
+                style="@style/commodity_text_yellow_size16sp"
+                android:text="0" />
+
+            <!--<TextView-->
+                <!--style="@style/commodity_text_yellow_size16sp"-->
+                <!--android:text="@string/date_of_winning" />-->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/base_layout_m_m"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/user_icon_default"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="30dip"
+                app:riv_mutate_background="true" />
+
+            <LinearLayout
+                style="@style/base_layout_m_m"
+                android:layout_marginTop="@dimen/base_margin_xsmall"
+                android:layout_marginLeft="@dimen/base_margin_large"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!--    获奖者    -->
+                <LinearLayout
+                    style="@style/base_layout_m_w_h"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/commodity_text_gray_size14sp"
+                        android:text="@string/award_winner" />
+
+                    <TextView
+                        android:id="@+id/tv_award_winner"
+                        style="@style/commodity_text_gray_size14sp"
+                         />
+
+                </LinearLayout>
+
+                <!--    本期参与    -->
+                <LinearLayout
+                    style="@style/base_layout_m_w_h"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/commodity_text_gray_size14sp"
+                        android:text="@string/num_of_participants" />
+
+                    <TextView
+                        android:id="@+id/tv_num_of_part"
+                        style="@style/commodity_text_gray_size14sp"
+                        android:text="10" />
+                    <TextView
+                        style="@style/commodity_text_gray_size14sp"
+                        android:text="@string/people_num" />
+
+                </LinearLayout>
+
+                <!--    中奖号码    -->
+                <LinearLayout
+                    style="@style/base_layout_m_w_h"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/commodity_text_gray_size14sp"
+                        android:text="@string/winning_numbers" />
+
+                    <TextView
+                        android:id="@+id/tv_win_num"
+                        style="@style/commodity_text_gray_size14sp"
+                        android:text="000" />
+
+                </LinearLayout>
+
+                <!--    开奖时间    -->
+                <LinearLayout
+                    style="@style/base_layout_m_w_h"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/commodity_text_gray_size14sp"
+                        android:text="@string/open_win_time" />
+                    <TextView
+                        android:id="@+id/tv_open_time"
+                        style="@style/commodity_text_gray_size14sp"
+                        android:text="0000" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/my_line" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <corners
+                android:radius="@dimen/login_btn_radius"
+                />
+            <gradient
+                android:startColor="#c01f2d"
+                android:endColor="#c23c32"
+                android:angle="0"
+                ></gradient>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <corners
+                android:radius="@dimen/login_btn_radius"
+                />
+            <gradient
+                android:startColor="#c01f2d"
+                android:endColor="#c23c32"
+                android:angle="0"
+                ></gradient>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners
+                android:radius="@dimen/login_btn_radius"
+                />
+            <gradient
+                android:startColor="#cb2d3e"
+                android:endColor="#ef473a"
+                android:angle="0"
+                ></gradient>
+        </shape>
+    </item>
+</selector>

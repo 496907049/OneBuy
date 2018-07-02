@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_top_bar" />
+
+    <include layout="@layout/base_search_view"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <RelativeLayout
+                android:id="@+id/city_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/city_listview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:cacheColorHint="@color/transparent"
+                        android:listSelector="@color/transparent"
+                        android:divider="@drawable/base_divider_hor"
+                        android:scrollbars="none" />
+
+                </FrameLayout>
+
+                <com.app.onebuy.login.countrychoose.MyLetterListView
+                    android:id="@+id/city_cityLetterListView"
+                    android:layout_width="30dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/black_transparent" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/city_search_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_transparent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/base_divider_hor"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

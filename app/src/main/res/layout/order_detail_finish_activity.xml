@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/base_top_bar"
+        />
+
+    <LinearLayout style="@style/list_item_bg_white_round"
+        android:padding="@dimen/base_padding_mid"
+        android:gravity="center"
+        >
+        <ImageView
+            style="@style/base_icon_fitxy"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="@dimen/base_margin_mid"
+            android:src="@drawable/icon_finish"
+            />
+
+        <TextView
+            style="@style/base_text_content"
+            android:textSize="@dimen/base_textsize_large"
+            android:layout_marginTop="@dimen/base_margin_mid"
+            android:text="@string/order_finish"
+            />
+        <TextView
+            style="@style/base_text_content.small"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/base_margin_mid"
+            android:text="@string/order_share_hint"
+            android:layout_marginBottom="@dimen/base_margin_mid"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/base_btn_match.margin_big"
+        android:background="@drawable/base_btn_red_gradient"
+        android:text="@string/confirm_delivery"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_weight="1.0"
+        />
+
+    <LinearLayout
+        style="@style/base_layout_m_w_h_cv"
+        android:background="@color/white"
+        android:paddingTop="@dimen/base_margin_mid"
+        android:paddingBottom="@dimen/base_padding_mid"
+        android:paddingRight="@dimen/base_padding_small"
+        android:paddingLeft="@dimen/base_padding_small"
+        >
+        
+        <TextView
+            android:id="@+id/btn_deleteorder"
+            style="@style/order_detail_btn_grey_rect"
+            android:text="@string/order_delete_order"
+            />
+        <TextView
+            android:id="@+id/btn_apply_aftersales"
+            style="@style/order_detail_btn_grey_rect"
+            android:text="@string/order_apply_aftersales"
+            />
+        <TextView
+            android:id="@+id/btn_comment"
+            style="@style/order_detail_btn_grey_rect"
+            android:text="@string/order_comment_goods"
+            />
+        <TextView
+            android:id="@+id/btn_buyagain"
+            style="@style/order_detail_btn_grey_rect"
+            android:text="@string/order_buy_again"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

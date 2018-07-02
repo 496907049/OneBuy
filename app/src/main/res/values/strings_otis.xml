@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="home_page_titile">一元购</string>
+    <string name="commodity_classification">商品分类</string>
+    <string name="commodity_info">商品信息</string>
+    <string name="img_txt_info">图文详情</string>
+    <string name="classification">分类</string>
+    <string name="recharge">账户充值</string>
+    <string name="help_center">帮助中心</string>
+    <string name="popularity">人气推荐</string>
+    <string name="commodity_name">商品名</string>
+    <string name="value">价值</string>
+    <string name="total_number">总人数</string>
+    <string name="remainder">剩余人数</string>
+    <string name="no">期号：</string>
+    <string name="status">揭晓状态：  </string>
+    <string name="statement">所有商品及活动均与苹果公司 (apple.inc.) 无关</string>
+    <string name="calculation_details">计算详情</string>
+    <string name="ending_time">本场结束剩余</string>
+    <string name="join">立即参与</string>
+    <string name="join_num">参与次数</string>
+    <string name="date_of_winning">期开奖信息</string>
+    <string name="award_winner">获奖者:</string>
+    <string name="num_of_participants">本期参与:</string>
+    <string name="people_num">人次</string>
+    <string name="winning_numbers">中奖号码:</string>
+    <string name="win_numbers">开奖码:</string>
+    <string name="open_time">揭晓时间:</string>
+    <string name="time">2018-03-28</string>
+    <string name="frequency">人次</string>
+    <string name="next_e_gou">新一期正在火热进行中...</string>
+    <string name="go_to_next">立即前往</string>
+    <string name="prize_code">开奖码</string>
+    <string name="announced">揭晓时间</string>
+    <string name="lottery">往期中奖</string>
+    <string name="share">晒单分享</string>
+    <string name="total_need">总需</string>
+    <string name="people">人次</string>
+    <string name="people_unit">人</string>
+    <string name="surplus">剩余</string>
+    <string name="hot_search">热门搜索</string>
+    <string name="equal"> = </string>
+    <string name="plus"> + </string>
+    <string name="how_much_people">本商品总参与的人数</string>
+    <string name="value_a"> 数值A </string>
+    <string name="spread"> 展开 </string>
+    <string name="cal_result"> 计算结果 </string>
+    <!--  新增  -->
+    <string name="qu_yu"> 取余数 </string>
+    <string name="number">数值</string>
+    <string name="value_rule">截至该商品开奖时间前最后100条全部参与记录时间总和</string>
+    <string name="cal_mode_and_explain">计算方式及说明</string>
+    <string name="explain1">1. 商品的最后一个号码分配完毕后，将公示该分配时间点前本站全部商品的最后100个参与时间；</string>
+    <string name="explain2">2. 将这100个时间的数值进行求和（得出数值A）（每个时间按时、分、秒、毫秒的顺序组合，如20:15:25.362则为201525362）；</string>
+    <string name="explain3">3. 数值A除以该商品总需人次得到的余数 + 原始数 10000001，得到最终幸运号码，拥有该幸运号码者，直接获得该商品。</string>
+    <string name="search">搜索</string>
+    <string name="history">历史记录</string>
+    <string name="join_time">参与时间</string>
+    <string name="right_arrow"> -></string>
+    <string name="conversion_data">转换数据</string>
+    <string name="nickname">用户昵称</string>
+    <string name="nick">昵称:</string>
+    <string name="take_up">收起</string>
+    <string name="clear_search_records">清除搜索历史</string>
+    <string name="how_much_peso">输入比索数量</string>
+    <string name="stage">期</string>
+    <string name="open_progress">揭晓进度</string>
+    <string name="one_peso_one_people">比索/人次</string>
+    <string name="two_pw_difference">确认密码与新密码不一致</string>
+    <string name="edit_sms_num">请输入短信验证码</string>
+    <string name="degree_hc">请同意《海沧区公共服务平台用户注册协议》</string>
+    <string name="edit_new_pwd">请输入新密码</string>
+    <string name="edit_user_num">请输入用户帐号</string>
+    <string name="no_bind_phone_num">该用户未绑定手机号码</string>
+    <string name="edit_mix_length">请输入6-20位字母或数字</string>
+    <string name="sure_receiver">是否确认收货？</string>
+    <string name="sure_now_exit">是否立即退出？</string>
+    <string name="sure_delete">是否确认删除？</string>
+    <string name="now_exit">立即退出</string>
+    <string name="sure_user_logout">是否退出当前账号？</string>
+    <string name="complete">完成</string>
+    <string name="edit_new_nick_name">请输入新的昵称</string>
+    <string name="edit_nick_name">请输入昵称</string>
+    <string name="reset_nick_name">修改昵称</string>
+    <string name="this_remainder">本场剩余人次：</string>
+    <string name="delivery_num">快递单号：</string>
+    <string name="pay_complete">支付完成</string>
+    <string name="order_pay_complete">订单支付成功</string>
+    <string name="payway">支付方式</string>
+    <string name="pay_num">支付金额</string>
+    <string name="add_receiver">新增收货人</string>
+    <string name="please_edit">请输入</string>
+    <string name="count_down">揭晓倒计时:</string>
+    <string name="no_result">没有找到相关的商品信息,请换一个关键词试试</string>
+    <string name="address_enter_delivery_adress">请输入收货地址</string>
+    <string name="open_win_time">开奖时间 ：</string>
+    <string name="edit_goods_key_word">输入商品关键词</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="all">全部</string>
+    <string name="doing">进行中</string>
+    <string name="unveiled">已揭晓</string>
+    <string name="check_join_num">查看参与码</string>
+    <string name="successful_invitation">成功邀请</string>
+    <string name="accumulative_reward">累计奖励</string>
+
+
+
+    <string name="sure_receiver_address">请务必核对您的收货地址，一旦选定后将无法修改</string>
+    <string name="order_complete_prompt">宝贝是否满足了你的期待？晒单分享给其他伙伴</string>
+
+</resources>

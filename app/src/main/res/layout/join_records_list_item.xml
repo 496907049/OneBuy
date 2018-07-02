@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/list_item_bg_white_round"
+        >
+
+        <LinearLayout
+            style="@style/base_layout_m_w_h"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_padding_mid"
+            android:paddingLeft="@dimen/base_padding_mid"
+            android:paddingRight="@dimen/base_padding_mid"
+            android:paddingTop="@dimen/base_padding_mid">
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="@dimen/base_padding_mid"
+                android:scaleType="fitXY"
+                android:src="@drawable/base_refresh_icon_click" />
+
+            <LinearLayout
+                style="@style/base_layout_m_w_v"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/text_name"
+                    style="@style/base_text_content.yellow"
+                    android:text="Apple/苹果Iphone 8"
+                    android:textSize="@dimen/base_textsize_mid" />
+
+                <LinearLayout
+                    style="@style/base_layout_w_w_h"
+                    android:layout_marginTop="@dimen/base_margin_small"
+                    >
+                    <TextView
+                        style="@style/base_text_content.small.grey"
+                        android:text="@string/order_period_num" />
+                    <TextView
+                        android:id="@+id/text_number"
+                        style="@style/base_text_content.small.grey"
+                        android:text="1101" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/base_layout_m_w_h_cv"
+                    android:layout_marginTop="@dimen/base_margin_xsmall"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/text_joinpeople"
+                        style="@style/base_text_content.small.grey"
+                        android:layout_weight="1.0"
+                        android:text="本期参与：10人次" />
+
+                    <TextView
+                        android:id="@+id/text_view_joinnum"
+                        style="@style/base_text_content.yellow"
+                        android:background="@drawable/base_item_shadow_selector"
+                        android:textSize="@dimen/base_textsize_small"
+                        android:text="@string/check_join_num" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            style="@style/divider_hor_style.color" />
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv"
+            android:paddingTop="@dimen/base_padding_small"
+            android:paddingBottom="@dimen/base_padding_small"
+            android:paddingLeft="@dimen/base_padding_mid"
+            android:paddingRight="@dimen/base_padding_mid"
+            >
+            <LinearLayout
+                android:id="@+id/view_lucky_start"
+                style="@style/base_layout_w_w_h">
+                <TextView
+                    style="@style/base_text_content.small"
+                    android:text="@string/order_lucky_start"
+                    />
+                <TextView
+                    android:id="@+id/text_luckyname"
+                    style="@style/base_text_content.small"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/base_layout_m_w_h"
+                android:layout_weight="1.0"
+                android:gravity="right"
+                >
+                <TextView
+                    android:id="@+id/text_status"
+                    style="@style/base_text_content.small.red"
+                    android:text="@string/unveiled"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

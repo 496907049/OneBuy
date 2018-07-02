@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    style="@style/base_item_style"
+		android:paddingLeft="@dimen/base_padding_mid"
+		android:paddingRight="@dimen/base_padding_mid"
+	    >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="1.0"
+			>
+			<TextView
+				android:id="@+id/text_name"
+				style="@style/base_text_content"
+				android:text="全国移动充值卡"
+				android:maxLines="2"
+				/>
+			<TextView
+				android:id="@+id/text_time"
+				style="@style/base_text_content.small.grey"
+				android:text="2019-03-29 12:01:00"
+				android:maxLines="1"
+				/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/text_money"
+			style="@style/base_text_content.yellow"
+			android:layout_marginLeft="@dimen/base_margin_small"
+			android:text="7比索"/>
+	</LinearLayout>
+	<ImageView 
+	    style="@style/divider_hor_style.color"
+	    />
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/base_top_bar"
+        />
+
+    <LinearLayout style="@style/list_item_bg_white_round"
+        android:padding="@dimen/base_padding_mid"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            style="@style/base_icon_fitxy"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/home_icon_shows_seleted"
+            />
+
+        <TextView
+            android:id="@+id/text_status"
+            style="@style/base_text_content.yellow"
+            android:layout_weight="1.0"
+            android:textSize="@dimen/base_textsize_xlarge"
+            android:layout_marginLeft="@dimen/base_margin_large"
+            android:text="@string/order_wait_receive"
+            />
+
+    </LinearLayout>
+    <LinearLayout style="@style/list_item_bg_white_round"
+        android:padding="@dimen/base_padding_mid"
+        >
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv">
+            <ImageView
+                style="@style/base_icon_fitxy"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_delivery_car"
+                />
+
+            <TextView
+                android:id="@+id/text_delivery_company"
+                style="@style/base_text_content"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="@dimen/base_margin_mid"
+                android:text="顺丰快递"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv"
+            android:layout_marginTop="@dimen/base_margin_small"
+            >
+            <ImageView
+                style="@style/base_icon_fitxy"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/text_delivery_num"
+                style="@style/base_text_content"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="@dimen/base_margin_mid"
+                android:text="快递单号：2765302256"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/list_item_bg_white_round"
+        android:padding="@dimen/base_padding_mid"
+        >
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv">
+            <ImageView
+                style="@style/base_icon_fitxy"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_location"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/text_name"
+                style="@style/base_text_content"
+                android:layout_marginLeft="@dimen/base_margin_mid"
+                android:text="呆呆贞"
+                />
+            <TextView
+                android:id="@+id/text_mobile"
+                style="@style/base_text_content"
+                android:layout_marginLeft="@dimen/base_margin_mid"
+                android:text="18545216316"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/base_layout_m_w_h_cv"
+            android:layout_marginTop="@dimen/base_margin_small"
+            >
+            <ImageView
+                style="@style/base_icon_fitxy"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_location"
+                />
+
+            <TextView
+                android:id="@+id/text_address"
+                style="@style/base_text_content"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="@dimen/base_margin_mid"
+                android:text="福建省厦门市思明区软件园"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/base_btn_match.margin_big"
+        android:background="@drawable/base_btn_red_gradient"
+        android:text="@string/confirm_delivery"
+        />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+	    style="@style/base_item_style"
+	    android:duplicateParentState="true"
+		android:paddingTop="@dimen/base_padding_mid"
+		android:paddingBottom="@dimen/base_padding_mid"
+	    >
+		<ImageView
+			android:id="@+id/img_icon"
+			style="@style/base_icon_mid"
+			android:scaleType="fitXY"
+			android:visibility="gone"
+			android:duplicateParentState="true"
+			/>
+	    <EditText
+	        android:id="@+id/edit_search"
+	        style="@style/base_edit"
+	        android:maxLines="1"
+	        android:layout_weight="1.0"
+	        />
+	    <ImageView
+	        android:id="@+id/img_tag"
+	        style="@style/base_item_img_tag"
+	        />
+	</LinearLayout>
+	<ImageView 
+	    style="@style/divider_hor_style.color"
+	    />
+</LinearLayout>

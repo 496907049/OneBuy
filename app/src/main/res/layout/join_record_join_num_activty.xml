@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_white"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/base_top_bar"
+        />
+
+    <LinearLayout
+        style="@style/base_item_style.white">
+
+        <TextView
+            style="@style/base_text_content"
+            android:layout_weight="1.0"
+            android:text="本期参与"
+            />
+        <TextView
+            android:id="@+id/text_num"
+            style="@style/base_text_content.red"
+            android:text="0"
+            />
+        <TextView
+            style="@style/base_text_content.red"
+            android:text="@string/order_peole_times"
+            />
+
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/base_icon_scrollbar_thumb"
+        />
+</LinearLayout>

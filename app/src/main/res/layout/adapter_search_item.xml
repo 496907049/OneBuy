@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_gravity="center"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/list_item"
+        style="@style/base_layout_m_m_v"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_product_icon"
+            style="@style/my_img" />
+
+        <TextView
+            android:id="@+id/tv_prod_name"
+            style="@style/base_text_content.small.yellow"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_prod_progress"
+            style="@style/base_text_content.small.grey"
+            android:layout_marginTop="5dp"
+            android:text="" />
+
+        <com.app.onebuy.view.roundprogressbar.RxRoundProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            app:rcBackgroundColor="@color/progress_bg"
+            app:rcBackgroundPadding="0dp"
+            app:rcMax="100"
+            app:rcProgress="20"
+            app:rcProgressColor="@color/text_yellow_color"
+            app:rcRadius="20dp"></com.app.onebuy.view.roundprogressbar.RxRoundProgressBar>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

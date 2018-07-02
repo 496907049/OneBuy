@@ -1,0 +1,144 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#ffffff</item>
+        <!-- AppCompatEditText默认状态状态设置底线颜色 -->
+        <item name="colorControlNormal">#ffffff</item>
+        <!-- AppCompatEditText选择的底线颜色 -->
+        <item name="colorControlActivated">#ffffff</item>
+
+    </style>
+
+
+    <style name="login_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/login_btn_yellow</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/base_textsize_mid</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/base_padding_small</item>
+        <item name="android:paddingBottom">@dimen/base_padding_small</item>
+        <item name="android:paddingLeft">@dimen/base_padding_mid</item>
+        <item name="android:paddingRight">@dimen/base_padding_mid</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="login_btn_msgcode">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:background">@drawable/login_btn_yellow</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/base_textsize_xsmall</item>
+        <item name="android:paddingLeft">@dimen/base_padding_small</item>
+        <item name="android:paddingRight">@dimen/base_padding_small</item>
+    </style>
+    <style name="login_img_thirdlogin" parent="@style/base_icon_fitxy">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:padding">@dimen/base_padding_small</item>
+        <item name="android:background">@drawable/base_item_shadow_selector</item>
+    </style>
+    <style name="user_item_name" parent="@style/base_text_content.match">
+        <item name="android:layout_marginLeft">@dimen/base_margin_mid</item>
+    </style>
+    <style name="user_item_divider" parent="@style/divider_hor_style.color">
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:background">@color/user_divider</item>
+    </style>
+
+    <style name="btn_text_small" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/base_padding_xsmall</item>
+        <item name="android:paddingBottom">@dimen/base_padding_xsmall</item>
+        <item name="android:paddingLeft">@dimen/base_padding_mid</item>
+        <item name="android:paddingRight">@dimen/base_padding_mid</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/base_textsize_small</item>
+        <item name="android:background">@drawable/base_btn_yellow</item>
+    </style>
+
+    <style name="bg_white_round" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/base_padding_xsmall</item>
+        <item name="android:layout_marginLeft">@dimen/base_padding_xsmall</item>
+        <item name="android:layout_marginRight">@dimen/base_padding_xsmall</item>
+        <item name="android:background">@drawable/bg_white_round</item>
+    </style>
+    <style name="list_item_bg_white_round" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/base_padding_xsmall</item>
+        <item name="android:layout_marginLeft">@dimen/base_padding_xsmall</item>
+        <item name="android:layout_marginRight">@dimen/base_padding_xsmall</item>
+        <item name="android:layout_marginBottom">@dimen/base_padding_xsmall</item>
+        <item name="android:background">@drawable/bg_white_round</item>
+    </style>
+
+    <style name="order_detail_btn_grey_rect" parent="base_text_content.small">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/base_padding_xsmall</item>
+        <item name="android:paddingBottom">@dimen/base_padding_xsmall</item>
+        <item name="android:textColor">@color/base_text_dark_grey</item>
+        <item name="android:background">@drawable/base_btn_grey_rect</item>
+        <item name="android:layout_marginLeft">@dimen/base_margin_small</item>
+        <item name="android:layout_marginRight">@dimen/base_margin_small</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="order_submit_numbtn" parent="base_text_content.small">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/base_padding_xsmall</item>
+        <item name="android:paddingBottom">@dimen/base_padding_xsmall</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/order_numbtn</item>
+        <item name="android:layout_marginLeft">@dimen/base_margin_small</item>
+        <item name="android:layout_marginRight">@dimen/base_margin_small</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="delete_btn" parent="base_text_content.small">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/base_padding_xsmall</item>
+        <item name="android:paddingBottom">@dimen/base_padding_xsmall</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/delete_btn</item>
+        <item name="android:layout_marginLeft">@dimen/base_margin_small</item>
+        <item name="android:layout_marginRight">@dimen/base_margin_small</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="order_payway_text" parent="base_text_content">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">@dimen/base_margin_small</item>
+        <item name="android:layout_marginRight">@dimen/base_margin_small</item>
+    </style>
+    <style name="user_item_title" parent="base_text_content">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+    <style name="share_img_item" parent="@style/base_layout_m_w_v" >
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="share_img_item_icon" parent="@style/base_icon_wrap" >
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="share_img_item_text" parent="@style/base_text_content.small" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/base_margin_mid</item>
+    </style>
+</resources>

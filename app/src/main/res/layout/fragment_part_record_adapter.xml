@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/base_layout_m_m_h"
+        android:gravity="center"
+        android:padding="@dimen/base_padding_xsmall">
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/base_margin_small"
+            android:src="@drawable/user_icon_default"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true" />
+
+        <LinearLayout
+            style="@style/base_layout_m_m_v"
+            android:layout_marginLeft="@dimen/base_margin_small"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_winer_name"
+                style="@style/commodity_text_gray_size14sp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:maxLines="2"
+                android:text="@string/award_winner" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/commodity_text_gray_size14sp"
+                android:layout_weight="1"
+                android:text="@string/open_time" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_frequency"
+            style="@style/commodity_text_yellow_size14sp"
+            android:layout_width="80dp"
+            android:text="@string/frequency"
+            android:gravity="right"
+            android:paddingRight="@dimen/dp_10"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_onebuy" default="compile.module.onebuy">
+  <dirname property="module.onebuy.basedir" file="${ant.file.module_onebuy}"/>
+  
+  <property name="module.jdk.home.onebuy" value="${jdk.home.1.8}"/>
+  <property name="module.jdk.bin.onebuy" value="${jdk.bin.1.8}"/>
+  <property name="module.jdk.classpath.onebuy" value="jdk.classpath.1.8"/>
+  
+  <property name="compiler.args.onebuy" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="onebuy.output.dir" value="${module.onebuy.basedir}/build/classes/production/OneBuy"/>
+  <property name="onebuy.testoutput.dir" value="${module.onebuy.basedir}/build/classes/test/OneBuy"/>
+  
+  <path id="onebuy.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="onebuy.module.production.classpath">
+    <path refid="${module.jdk.classpath.onebuy}"/>
+  </path>
+  
+  <path id="onebuy.runtime.production.module.classpath">
+    <pathelement location="${onebuy.output.dir}"/>
+  </path>
+  
+  <path id="onebuy.module.classpath">
+    <path refid="${module.jdk.classpath.onebuy}"/>
+    <pathelement location="${onebuy.output.dir}"/>
+  </path>
+  
+  <path id="onebuy.runtime.module.classpath">
+    <pathelement location="${onebuy.testoutput.dir}"/>
+    <pathelement location="${onebuy.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.onebuy">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.onebuy">
+    <patternset refid="excluded.from.module.onebuy"/>
+  </patternset>
+  
+  
+  <target name="compile.module.onebuy" depends="compile.module.onebuy.production,compile.module.onebuy.tests" description="Compile module OneBuy"/>
+  
+  <target name="compile.module.onebuy.production" depends="register.custom.compilers" description="Compile module OneBuy; production classes"/>
+  
+  <target name="compile.module.onebuy.tests" depends="register.custom.compilers,compile.module.onebuy.production" description="compile module OneBuy; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.onebuy" description="cleanup module">
+    <delete dir="${onebuy.output.dir}"/>
+    <delete dir="${onebuy.testoutput.dir}"/>
+  </target>
+</project>
